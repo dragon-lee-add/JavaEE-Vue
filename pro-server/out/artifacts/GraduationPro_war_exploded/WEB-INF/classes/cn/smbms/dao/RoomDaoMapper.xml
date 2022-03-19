@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="cn.smbms.dao.RoomDao">
+    <!-- 查询所有 房型-->
+    <select id="selectAllRoom" resultType="cn.smbms.pojo.Room">
+    		select *   from  room
+    </select>
+    <!--删除-->
+    <delete id="deleteRoom" parameterType="Integer">
+    	 delete from  room where roomId = #{roomId}
+	</delete>
+
+    <!--更新-->
+    <update id="updRoomById" parameterType="cn.smbms.pojo.Room">
+    update room set price=#{price},type=#{type},area=#{area},total=#{total},address=#{address} where roomId=#{roomId}
+    </update>
+
+    <!--id查询-->
+    <select id="selectByIdOfVue" resultType="cn.smbms.pojo.Room" parameterType="String">
+        select * from  room where roomId=#{roomId}
+    </select>
+    <!--id查询-->
+    <select id="selectById" resultType="cn.smbms.pojo.Room">
+        select * from  room where roomId=#{roomId}
+    </select>
+
+
+    <!--新增房型-->
+    <insert id="insertRoom" parameterType="cn.smbms.pojo.Room">
+        INSERT INTO room(roomId,type,area,price,total,address)
+        VALUES (#{roomId},#{type},#{area},#{price},#{total},#{address})
+    </insert>
+
+
+    <!-- 查询所有房型前端接口-->
+    <select id="findAllRoomVue" resultType="cn.smbms.pojo.Room">
+    		select *   from  room
+    </select>
+
+
+</mapper>

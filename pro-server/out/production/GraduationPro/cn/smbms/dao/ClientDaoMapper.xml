@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="cn.smbms.dao.ClientDao">
+
+    <!-- 查询所有 客户-->
+    <select id="selectAllClient" resultType="cn.smbms.pojo.Client">
+    		select *   from  client
+    </select>
+
+
+    <!--id查询-->
+    <select id="selectById" resultType="cn.smbms.pojo.Client">
+        select * from  client where id=#{id}
+    </select>
+    <!--更新-->
+    <update id="updClientById" parameterType="cn.smbms.pojo.Client">
+    update client set name=#{name},sex=#{sex},age=#{age},phone=#{phone},addr=#{addr} where id=#{id}
+    </update>
+
+
+    <!--新增-->
+    <insert id="insertClient" parameterType="cn.smbms.pojo.Client">
+        INSERT INTO client(roomId,name,sex,age,phone,addr)
+        VALUES (#{roomId},#{name},#{sex},#{age},#{phone},#{addr})
+    </insert>
+
+    <!--前台登录-->
+    <select id="LoginClient" parameterType="Client" resultType="cn.smbms.pojo.Client">
+    		select *
+	        from users
+	        where userId=#{userId}
+	        and passWord =#{passWord}
+    </select>
+
+    <!--前台注册-->
+    <insert id="RegisterClient" parameterType="Client">
+        INSERT INTO users(userId,passWord)
+        VALUES (#{userId},#{passWord})
+    </insert>
+</mapper>
