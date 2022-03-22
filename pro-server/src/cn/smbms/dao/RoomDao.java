@@ -22,7 +22,9 @@ public interface RoomDao {
      */
     public Integer updRoomById(Room room);
 
-
+    /**
+     * 前端
+     */
     List<Room> selectByIdOfVue(@RequestBody String roomId);
 
     Room selectById(String roomId);

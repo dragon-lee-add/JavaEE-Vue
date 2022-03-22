@@ -60,6 +60,9 @@ public class RoomServiceImpl implements RoomService {
 
     @Override
     public List<Room> findAllRoomVue() {
+        System.out.println("测试");
         return roomDao.findAllRoomVue();
     }
+
+
 }
