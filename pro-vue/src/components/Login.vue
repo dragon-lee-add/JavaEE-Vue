@@ -64,7 +64,7 @@
         }
       },
       methods: {
-        submitForm(formName) {
+        async submitForm(formName) {
           this.$refs[formName].validate((valid) => {
             if (valid) {
               let _this = this;
@@ -74,10 +74,6 @@
               }).then(response => {
                  console.log(response.data.code)
                 if (response.data.code==200) {
-                //   if (this.loginForm.remember == true) {
-                //     sessionStorage.setItem("userId", this.loginForm.userId);
-                //     sessionStorage.setItem("passWord", this.loginForm.passWord);
-                //   }
                   sessionStorage.setItem("userId", this.loginForm.userId);
                   sessionStorage.setItem('isLogin', 1);//登录判断,自定义赋值
                   //页面跳转
