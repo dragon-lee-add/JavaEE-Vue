@@ -10,6 +10,7 @@ public class Client {
     private String addr;
     private String userId;
     private String passWord;
+    private Room room;
 
     public Integer getId() {
         return id;
@@ -82,6 +83,15 @@ public class Client {
     public void setPassWord(String passWord) {
         this.passWord = passWord;
     }
+
+    public Room getRoom() {
+        return room;
+    }
+
+    public void setRoom(Room room) {
+        this.room = room;
+    }
+
     @Override
     public String toString() {
         return "Client{" +

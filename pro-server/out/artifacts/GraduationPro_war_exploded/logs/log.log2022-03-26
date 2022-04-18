@@ -1,0 +1,975 @@
+- (3586 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [servletConfigInitParams] PropertySource with lowest search precedence
+- (3590 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [servletContextInitParams] PropertySource with lowest search precedence
+- (3590 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [jndiProperties] PropertySource with lowest search precedence
+- (3591 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [systemProperties] PropertySource with lowest search precedence
+- (3591 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [systemEnvironment] PropertySource with lowest search precedence
+- (3592 ms) - 2022-3-26 17:24:57[DEBUG](AbstractEnvironment.java:126) Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+- (3592 ms) - 2022-3-26 17:24:57[DEBUG](GenericFilterBean.java:172) Initializing filter 'cors'
+- (3596 ms) - 2022-3-26 17:24:57[DEBUG](GenericFilterBean.java:197) Filter 'cors' configured successfully
+- (3597 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [servletConfigInitParams] PropertySource with lowest search precedence
+- (3598 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [servletContextInitParams] PropertySource with lowest search precedence
+- (3598 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [jndiProperties] PropertySource with lowest search precedence
+- (3598 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [systemProperties] PropertySource with lowest search precedence
+- (3598 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [systemEnvironment] PropertySource with lowest search precedence
+- (3599 ms) - 2022-3-26 17:24:57[DEBUG](AbstractEnvironment.java:126) Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+- (3599 ms) - 2022-3-26 17:24:57[DEBUG](GenericFilterBean.java:172) Initializing filter 'encodingFilter'
+- (3612 ms) - 2022-3-26 17:24:57[DEBUG](GenericFilterBean.java:197) Filter 'encodingFilter' configured successfully
+- (3621 ms) - 2022-3-26 17:24:57[DEBUG](HttpServletBean.java:118) Initializing servlet 'spring'
+- (3623 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [servletConfigInitParams] PropertySource with lowest search precedence
+- (3624 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [servletContextInitParams] PropertySource with lowest search precedence
+- (3624 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [jndiProperties] PropertySource with lowest search precedence
+- (3624 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [systemProperties] PropertySource with lowest search precedence
+- (3624 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [systemEnvironment] PropertySource with lowest search precedence
+- (3625 ms) - 2022-3-26 17:24:57[DEBUG](AbstractEnvironment.java:126) Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+- (3641 ms) - 2022-3-26 17:24:57[ INFO](FrameworkServlet.java:457) FrameworkServlet 'spring': initialization started
+- (3641 ms) - 2022-3-26 17:24:57[DEBUG](FrameworkServlet.java:585) Servlet with name 'spring' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Sat Mar 26 17:24:53 CST 2022]; root of context hierarchy]
+- (3642 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.active' in [servletConfigInitParams]
+- (3642 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.active' in [servletContextInitParams]
+- (3642 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.active' in [jndiProperties]
+- (3643 ms) - 2022-3-26 17:24:57[DEBUG](JndiTemplate.java:150) Looking up JNDI object with name [java:comp/env/spring.profiles.active]
+- (3643 ms) - 2022-3-26 17:24:57[DEBUG](JndiLocatorSupport.java:101) Converted JNDI name [java:comp/env/spring.profiles.active] not found - trying original name [spring.profiles.active]. javax.naming.NameNotFoundException: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].
+- (3643 ms) - 2022-3-26 17:24:57[DEBUG](JndiTemplate.java:150) Looking up JNDI object with name [spring.profiles.active]
+- (3643 ms) - 2022-3-26 17:24:57[DEBUG](JndiPropertySource.java:90) JNDI lookup for name [spring.profiles.active] threw NamingException with message: Name [spring.profiles.active] is not bound in this Context. Unable to find [spring.profiles.active].. Returning null.
+- (3644 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.active' in [systemProperties]
+- (3644 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.active' in [systemEnvironment]
+- (3644 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key 'spring.profiles.active' in any property source. Returning [null]
+- (3644 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.default' in [servletConfigInitParams]
+- (3645 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.default' in [servletContextInitParams]
+- (3645 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.default' in [jndiProperties]
+- (3645 ms) - 2022-3-26 17:24:57[DEBUG](JndiTemplate.java:150) Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+- (3645 ms) - 2022-3-26 17:24:57[DEBUG](JndiLocatorSupport.java:101) Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+- (3645 ms) - 2022-3-26 17:24:57[DEBUG](JndiTemplate.java:150) Looking up JNDI object with name [spring.profiles.default]
+- (3646 ms) - 2022-3-26 17:24:57[DEBUG](JndiPropertySource.java:90) JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+- (3646 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.default' in [systemProperties]
+- (3646 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.default' in [systemEnvironment]
+- (3646 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key 'spring.profiles.default' in any property source. Returning [null]
+- (3647 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.default' in [servletConfigInitParams]
+- (3650 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.default' in [servletContextInitParams]
+- (3651 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.default' in [jndiProperties]
+- (3651 ms) - 2022-3-26 17:24:57[DEBUG](JndiTemplate.java:150) Looking up JNDI object with name [java:comp/env/spring.profiles.default]
+- (3652 ms) - 2022-3-26 17:24:57[DEBUG](JndiLocatorSupport.java:101) Converted JNDI name [java:comp/env/spring.profiles.default] not found - trying original name [spring.profiles.default]. javax.naming.NameNotFoundException: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].
+- (3652 ms) - 2022-3-26 17:24:57[DEBUG](JndiTemplate.java:150) Looking up JNDI object with name [spring.profiles.default]
+- (3653 ms) - 2022-3-26 17:24:57[DEBUG](JndiPropertySource.java:90) JNDI lookup for name [spring.profiles.default] threw NamingException with message: Name [spring.profiles.default] is not bound in this Context. Unable to find [spring.profiles.default].. Returning null.
+- (3654 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.default' in [systemProperties]
+- (3654 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.profiles.default' in [systemEnvironment]
+- (3655 ms) - 2022-3-26 17:24:57[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key 'spring.profiles.default' in any property source. Returning [null]
+- (3659 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:173) Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+- (3659 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:173) Replacing [servletConfigInitParams] PropertySource with [servletConfigInitParams]
+- (3661 ms) - 2022-3-26 17:24:57[ INFO](AbstractApplicationContext.java:512) Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Mar 26 17:24:57 CST 2022]; parent: Root WebApplicationContext
+- (3664 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [systemProperties] PropertySource with lowest search precedence
+- (3664 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [systemEnvironment] PropertySource with lowest search precedence
+- (3664 ms) - 2022-3-26 17:24:57[DEBUG](AbstractEnvironment.java:126) Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+- (3665 ms) - 2022-3-26 17:24:57[ INFO](XmlBeanDefinitionReader.java:316) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+- (3670 ms) - 2022-3-26 17:24:57[DEBUG](DefaultDocumentLoader.java:72) Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+- (3672 ms) - 2022-3-26 17:24:57[DEBUG](PluggableSchemaResolver.java:140) Loading schema mappings from [META-INF/spring.schemas]
+- (3674 ms) - 2022-3-26 17:24:57[DEBUG](PluggableSchemaResolver.java:146) Loaded schema mappings: {http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+- (3683 ms) - 2022-3-26 17:24:57[DEBUG](PluggableSchemaResolver.java:118) Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.2.xsd
+- (3694 ms) - 2022-3-26 17:24:57[DEBUG](PluggableSchemaResolver.java:118) Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-3.2.xsd
+- (3698 ms) - 2022-3-26 17:24:57[DEBUG](PluggableSchemaResolver.java:118) Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.2.xsd
+- (3706 ms) - 2022-3-26 17:24:57[DEBUG](PluggableSchemaResolver.java:118) Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.2.xsd
+- (3712 ms) - 2022-3-26 17:24:57[DEBUG](DefaultBeanDefinitionDocumentReader.java:99) Loading bean definitions
+- (3716 ms) - 2022-3-26 17:24:57[DEBUG](DefaultNamespaceHandlerResolver.java:156) Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+- (3717 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [systemProperties] PropertySource with lowest search precedence
+- (3717 ms) - 2022-3-26 17:24:57[DEBUG](MutablePropertySources.java:108) Adding [systemEnvironment] PropertySource with lowest search precedence
+- (3718 ms) - 2022-3-26 17:24:57[DEBUG](AbstractEnvironment.java:126) Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+- (3720 ms) - 2022-3-26 17:24:57[DEBUG](ClassPathScanningCandidateComponentProvider.java:231) JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+- (3725 ms) - 2022-3-26 17:24:57[DEBUG](PathMatchingResourcePatternResolver.java:553) Looking for matching resources in directory tree [F:\JavaEE-Vue\pro-server\out\artifacts\GraduationPro_war_exploded\WEB-INF\classes\cn\smbms\controller]
+- (3726 ms) - 2022-3-26 17:24:57[DEBUG](PathMatchingResourcePatternResolver.java:615) Searching directory [F:\JavaEE-Vue\pro-server\out\artifacts\GraduationPro_war_exploded\WEB-INF\classes\cn\smbms\controller] for files matching pattern [F:/JavaEE-Vue/pro-server/out/artifacts/GraduationPro_war_exploded/WEB-INF/classes/cn/smbms/controller/**/*.class]
+- (3728 ms) - 2022-3-26 17:24:57[DEBUG](PathMatchingResourcePatternResolver.java:354) Resolved location pattern [classpath*:cn/smbms/controller/**/*.class] to resources [file [F:\JavaEE-Vue\pro-server\out\artifacts\GraduationPro_war_exploded\WEB-INF\classes\cn\smbms\controller\ClientController.class], file [F:\JavaEE-Vue\pro-server\out\artifacts\GraduationPro_war_exploded\WEB-INF\classes\cn\smbms\controller\PageController.class], file [F:\JavaEE-Vue\pro-server\out\artifacts\GraduationPro_war_exploded\WEB-INF\classes\cn\smbms\controller\RoomController.class], file [F:\JavaEE-Vue\pro-server\out\artifacts\GraduationPro_war_exploded\WEB-INF\classes\cn\smbms\controller\UserController.class]]
+- (3747 ms) - 2022-3-26 17:24:57[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [F:\JavaEE-Vue\pro-server\out\artifacts\GraduationPro_war_exploded\WEB-INF\classes\cn\smbms\controller\ClientController.class]
+- (3753 ms) - 2022-3-26 17:24:57[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [F:\JavaEE-Vue\pro-server\out\artifacts\GraduationPro_war_exploded\WEB-INF\classes\cn\smbms\controller\PageController.class]
+- (3757 ms) - 2022-3-26 17:24:57[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [F:\JavaEE-Vue\pro-server\out\artifacts\GraduationPro_war_exploded\WEB-INF\classes\cn\smbms\controller\RoomController.class]
+- (3760 ms) - 2022-3-26 17:24:57[DEBUG](ClassPathScanningCandidateComponentProvider.java:273) Identified candidate component class: file [F:\JavaEE-Vue\pro-server\out\artifacts\GraduationPro_war_exploded\WEB-INF\classes\cn\smbms\controller\UserController.class]
+- (3835 ms) - 2022-3-26 17:24:57[DEBUG](BeanDefinitionParserDelegate.java:494) Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.http.converter.StringHttpMessageConverter#0]
+- (3836 ms) - 2022-3-26 17:24:57[DEBUG](BeanDefinitionParserDelegate.java:494) Neither XML 'id' nor 'name' specified - using generated bean name [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter#0]
+- (3887 ms) - 2022-3-26 17:24:57[DEBUG](BeanDefinitionParserDelegate.java:494) Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#21383c0]
+- (3888 ms) - 2022-3-26 17:24:57[DEBUG](BeanDefinitionParserDelegate.java:494) Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0]
+- (3890 ms) - 2022-3-26 17:24:57[DEBUG](BeanDefinitionParserDelegate.java:494) Neither XML 'id' nor 'name' specified - using generated bean name [cn.smbms.interceptor.LoginInterceptor#0]
+- (3891 ms) - 2022-3-26 17:24:57[DEBUG](AbstractBeanDefinitionReader.java:216) Loaded 25 bean definitions from location pattern [classpath:springmvc-servlet.xml]
+- (3891 ms) - 2022-3-26 17:24:57[DEBUG](AbstractApplicationContext.java:542) Bean factory for WebApplicationContext for namespace 'spring-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@2c2da9b8: defining beans [clientController,pageController,roomController,userController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.web.servlet.handler.MappedInterceptor#1,multipartResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@3132be8a
+- (3910 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+- (3910 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+- (3911 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+- (3911 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+- (4012 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+- (4013 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+- (4016 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+- (4016 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+- (4016 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+- (4017 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+- (4017 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+- (4017 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+- (4018 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+- (4018 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+- (4018 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+- (4018 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+- (4019 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+- (4019 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+- (4019 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+- (4020 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+- (4020 ms) - 2022-3-26 17:24:57[DEBUG](AbstractApplicationContext.java:809) Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@5ac3fc99]
+- (4020 ms) - 2022-3-26 17:24:57[DEBUG](AbstractApplicationContext.java:833) Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@62cb2806]
+- (4021 ms) - 2022-3-26 17:24:57[DEBUG](UiApplicationContextUtils.java:85) Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@1cefba0b]
+- (4023 ms) - 2022-3-26 17:24:57[ INFO](DefaultListableBeanFactory.java:603) Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2c2da9b8: defining beans [clientController,pageController,roomController,userController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.web.servlet.handler.MappedInterceptor#1,multipartResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@3132be8a
+- (4029 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'clientController'
+- (4029 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'clientController'
+- (4048 ms) - 2022-3-26 17:24:57[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.smbms.controller.ClientController]: AutowiredFieldElement for private cn.smbms.service.ClientService cn.smbms.controller.ClientController.clientService
+- (4048 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'clientController' to allow for resolving potential circular references
+- (4051 ms) - 2022-3-26 17:24:57[DEBUG](InjectionMetadata.java:86) Processing injected element of bean 'clientController': AutowiredFieldElement for private cn.smbms.service.ClientService cn.smbms.controller.ClientController.clientService
+- (4052 ms) - 2022-3-26 17:24:57[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'clientServiceImpl'
+- (4052 ms) - 2022-3-26 17:24:57[DEBUG](AutowiredAnnotationBeanPostProcessor.java:450) Autowiring by type from bean name 'clientController' to bean named 'clientServiceImpl'
+- (4053 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'clientController'
+- (4053 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'pageController'
+- (4053 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'pageController'
+- (4055 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'pageController' to allow for resolving potential circular references
+- (4058 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'pageController'
+- (4058 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'roomController'
+- (4058 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'roomController'
+- (4059 ms) - 2022-3-26 17:24:57[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.smbms.controller.RoomController]: AutowiredFieldElement for private cn.smbms.service.RoomService cn.smbms.controller.RoomController.roomService
+- (4060 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'roomController' to allow for resolving potential circular references
+- (4062 ms) - 2022-3-26 17:24:57[DEBUG](InjectionMetadata.java:86) Processing injected element of bean 'roomController': AutowiredFieldElement for private cn.smbms.service.RoomService cn.smbms.controller.RoomController.roomService
+- (4063 ms) - 2022-3-26 17:24:57[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomServiceImpl'
+- (4063 ms) - 2022-3-26 17:24:57[DEBUG](AutowiredAnnotationBeanPostProcessor.java:450) Autowiring by type from bean name 'roomController' to bean named 'roomServiceImpl'
+- (4063 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'roomController'
+- (4063 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'userController'
+- (4064 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'userController'
+- (4064 ms) - 2022-3-26 17:24:57[DEBUG](InjectionMetadata.java:72) Registered injected element on class [cn.smbms.controller.UserController]: AutowiredFieldElement for private cn.smbms.service.UserService cn.smbms.controller.UserController.userService
+- (4064 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'userController' to allow for resolving potential circular references
+- (4067 ms) - 2022-3-26 17:24:57[DEBUG](InjectionMetadata.java:86) Processing injected element of bean 'userController': AutowiredFieldElement for private cn.smbms.service.UserService cn.smbms.controller.UserController.userService
+- (4068 ms) - 2022-3-26 17:24:57[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'userServiceImpl'
+- (4068 ms) - 2022-3-26 17:24:57[DEBUG](AutowiredAnnotationBeanPostProcessor.java:450) Autowiring by type from bean name 'userController' to bean named 'userServiceImpl'
+- (4069 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'userController'
+- (4069 ms) - 2022-3-26 17:24:57[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+- (4069 ms) - 2022-3-26 17:24:57[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+- (4070 ms) - 2022-3-26 17:24:57[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+- (4070 ms) - 2022-3-26 17:24:57[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+- (4070 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+- (4071 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'mvcContentNegotiationManager'
+- (4072 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references
+- (4083 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'mvcContentNegotiationManager'
+- (4091 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'mvcContentNegotiationManager'
+- (4091 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+- (4091 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+- (4094 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' to allow for resolving potential circular references
+- (4115 ms) - 2022-3-26 17:24:57[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+- (4117 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+- (4117 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+- (4149 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#37b84958'
+- (4150 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+- (4150 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+- (4151 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+- (4160 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+- (4185 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+- (4200 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#37b84958'
+- (4205 ms) - 2022-3-26 17:24:57[DEBUG](BeanUtils.java:456) No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+- (4206 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+- (4209 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+- (4209 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+- (4210 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+- (4210 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'cn.smbms.interceptor.LoginInterceptor#0'
+- (4214 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'cn.smbms.interceptor.LoginInterceptor#0'
+- (4214 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#1' to allow for resolving potential circular references
+- (4215 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+- (4216 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+- (4216 ms) - 2022-3-26 17:24:57[DEBUG](AbstractHandlerMethodMapping.java:99) Looking for request mappings in application context: WebApplicationContext for namespace 'spring-servlet': startup date [Sat Mar 26 17:24:57 CST 2022]; parent: Root WebApplicationContext
+- (4242 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/registerClient],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.register(cn.smbms.pojo.Client)
+- (4242 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/loginClient],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)
+- (4243 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/ClientList.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.smbms.controller.ClientController.findAll(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpSession)
+- (4243 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/ClientUp.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.ClientController.Page(org.springframework.ui.Model,java.lang.Integer)
+- (4243 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/upClientById.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.ClientController.updRoomById(cn.smbms.pojo.Client,org.springframework.ui.ModelMap,java.lang.Integer)
+- (4243 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/AddClient.do],methods=[],params=[],headers=[],consumes=[],produces=[text/plain;charset=utf-8],custom=[]}" onto public java.lang.String cn.smbms.controller.ClientController.insertClient(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4245 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.PageController.handleRequest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4245 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/RoomEdit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.PageController.handleRequestRoomEdit(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4246 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/ClientEdit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.PageController.handleRequestClientEdit(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4246 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/ClientManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.PageController.handleRequestClientManage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4246 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/RoomAdd],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.PageController.handleRequestRoomAdd(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4247 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/ClientAdd],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.PageController.handleRequestClientAdd(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4247 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/Index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.PageController.handleRequestIndex(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4247 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/EditPwd],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.PageController.handleRequestEditPwd(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4247 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/Message],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.PageController.handleRequestMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4248 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/RoomManage],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.PageController.handleRequestRoomManage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4249 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/findRoomById],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findById(java.util.HashMap<java.lang.String, java.lang.String>)
+- (4249 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/findAllRoomVue],methods=[],params=[],headers=[],consumes=[],produces=[application/json;charset=UTF-8],custom=[]}" onto public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()
+- (4250 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/RoomList.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView cn.smbms.controller.RoomController.findAll(int,int,javax.servlet.http.HttpSession)
+- (4250 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/RoomUp.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.RoomController.Page(java.lang.String,org.springframework.ui.Model)
+- (4250 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/delRoom.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.RoomController.delRoom(java.lang.Integer)
+- (4250 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/updRoomById.do],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.RoomController.updRoomById(cn.smbms.pojo.Room,org.springframework.ui.ModelMap,java.lang.Integer)
+- (4251 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/AddRoom.do],methods=[],params=[],headers=[],consumes=[],produces=[text/plain;charset=utf-8],custom=[]}" onto public java.lang.String cn.smbms.controller.RoomController.insertRoom(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception
+- (4251 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/login.html],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.UserController.login(org.springframework.ui.Model,java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+- (4251 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/loginOut.html],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.UserController.LoginOut(javax.servlet.http.HttpServletRequest)
+- (4252 ms) - 2022-3-26 17:24:57[ INFO](AbstractHandlerMethodMapping.java:180) Mapped "{[/editPwd.html],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String cn.smbms.controller.UserController.modifyPassword(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.ModelMap)
+- (4252 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+- (4253 ms) - 2022-3-26 17:24:57[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+- (4253 ms) - 2022-3-26 17:24:57[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+- (4253 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+- (4268 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0' to allow for resolving potential circular references
+- (4277 ms) - 2022-3-26 17:24:57[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+- (4339 ms) - 2022-3-26 17:24:58[DEBUG](LoggerFactory.java:28) Logging Provider: org.jboss.logging.Log4jLoggerProvider
+- (4340 ms) - 2022-3-26 17:24:58[ INFO](Version.java:27) HV000001: Hibernate Validator 4.3.2.Final
+- (4348 ms) - 2022-3-26 17:24:58[DEBUG](DefaultTraversableResolver.java:80) Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+- (4358 ms) - 2022-3-26 17:24:58[DEBUG](ConfigurationImpl.java:111) Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+- (4359 ms) - 2022-3-26 17:24:58[DEBUG](ConfigurationImpl.java:131) Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+- (4362 ms) - 2022-3-26 17:24:58[DEBUG](ValidationXmlParser.java:190) Trying to load META-INF/validation.xml for XML based Validator configuration.
+- (4375 ms) - 2022-3-26 17:24:58[DEBUG](ValidationXmlParser.java:193) No META-INF/validation.xml found. Using annotation based configuration only.
+- (4492 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+- (4492 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+- (4492 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+- (4530 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0' to allow for resolving potential circular references
+- (4547 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+- (4548 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#57655b41'
+- (4560 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+- (4562 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0'
+- (4562 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#57655b41'
+- (4562 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.http.converter.StringHttpMessageConverter#0'
+- (4573 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.http.converter.StringHttpMessageConverter#0'
+- (4573 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter#0'
+- (4708 ms) - 2022-3-26 17:24:58[DEBUG](BeanUtils.java:456) No property editor [com.alibaba.fastjson.serializer.SerializerFeatureEditor] found for type com.alibaba.fastjson.serializer.SerializerFeature according to 'Editor' suffix convention
+- (4709 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter#0'
+- (4709 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#21d63409'
+- (4713 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#21d63409'
+- (4713 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#77b6d13f'
+- (4714 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#77b6d13f'
+- (4714 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#4e60f0a8'
+- (4719 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#4e60f0a8'
+- (4719 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#581e5d97'
+- (4725 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#581e5d97'
+- (4725 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#50cc06a6'
+- (4732 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#50cc06a6'
+- (4732 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#5a42b233'
+- (4745 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#5a42b233'
+- (4746 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+- (4800 ms) - 2022-3-26 17:24:58[DEBUG](RequestMappingHandlerAdapter.java:614) Looking for controller advice: WebApplicationContext for namespace 'spring-servlet': startup date [Sat Mar 26 17:24:57 CST 2022]; parent: Root WebApplicationContext
+- (4802 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+- (4803 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+- (4803 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+- (4804 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+- (4805 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0' to allow for resolving potential circular references
+- (4814 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+- (4815 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.http.converter.StringHttpMessageConverter#0#1'
+- (4816 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.http.converter.StringHttpMessageConverter#0#1'
+- (4816 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter#0#1'
+- (4817 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter#0#1'
+- (4817 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#21d63409#1'
+- (4818 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#21d63409#1'
+- (4818 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#77b6d13f#1'
+- (4819 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#77b6d13f#1'
+- (4819 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#4e60f0a8#1'
+- (4820 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#4e60f0a8#1'
+- (4821 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#581e5d97#1'
+- (4822 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#581e5d97#1'
+- (4823 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#50cc06a6#1'
+- (4824 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#50cc06a6#1'
+- (4824 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean '(inner bean)#5a42b233#1'
+- (4825 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean '(inner bean)#5a42b233#1'
+- (4825 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+- (4826 ms) - 2022-3-26 17:24:58[DEBUG](ExceptionHandlerExceptionResolver.java:282) Looking for exception mappings: WebApplicationContext for namespace 'spring-servlet': startup date [Sat Mar 26 17:24:57 CST 2022]; parent: Root WebApplicationContext
+- (4827 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+- (4828 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+- (4828 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+- (4828 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0' to allow for resolving potential circular references
+- (4834 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+- (4834 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+- (4834 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+- (4835 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0' to allow for resolving potential circular references
+- (4840 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+- (4840 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+- (4840 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+- (4841 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' to allow for resolving potential circular references
+- (4864 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+- (4865 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+- (4865 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:71) Looking for URL mappings in application context: WebApplicationContext for namespace 'spring-servlet': startup date [Sat Mar 26 17:24:57 CST 2022]; parent: Root WebApplicationContext
+- (4865 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'clientController': no URL paths identified
+- (4866 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'pageController': no URL paths identified
+- (4866 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'roomController': no URL paths identified
+- (4866 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'userController': no URL paths identified
+- (4866 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+- (4866 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+- (4867 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+- (4867 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+- (4867 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+- (4867 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': no URL paths identified
+- (4868 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+- (4868 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0': no URL paths identified
+- (4868 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0': no URL paths identified
+- (4868 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+- (4869 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
+- (4869 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
+- (4869 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
+- (4869 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+- (4869 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+- (4872 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+- (4873 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': no URL paths identified
+- (4874 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+- (4874 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0': no URL paths identified
+- (4874 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#1': no URL paths identified
+- (4875 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'multipartResolver': no URL paths identified
+- (4875 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+- (4875 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'environment': no URL paths identified
+- (4875 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'systemProperties': no URL paths identified
+- (4876 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'systemEnvironment': no URL paths identified
+- (4876 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'servletConfig': no URL paths identified
+- (4876 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+- (4877 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'messageSource': no URL paths identified
+- (4877 ms) - 2022-3-26 17:24:58[DEBUG](AbstractDetectingUrlHandlerMapping.java:86) Rejected bean name 'applicationEventMulticaster': no URL paths identified
+- (4877 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+- (4878 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+- (4878 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+- (4878 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references
+- (4882 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+- (4882 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+- (4883 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+- (4883 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references
+- (4886 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+- (4887 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+- (4888 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+- (4890 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' to allow for resolving potential circular references
+- (4897 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+- (4897 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+- (4898 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+- (4898 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+- (4898 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' to allow for resolving potential circular references
+- (4908 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+- (4909 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+- (4909 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+- (4910 ms) - 2022-3-26 17:24:58[ INFO](AbstractUrlHandlerMapping.java:315) Mapped URL path [/statics/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+- (4910 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+- (4910 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
+- (4910 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
+- (4914 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0' to allow for resolving potential circular references
+- (4921 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#21383c0'
+- (4943 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#21383c0'
+- (4944 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:239) Returning eagerly cached instance of singleton bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0' that is not fully initialized yet - a consequence of a circular reference
+- (4944 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
+- (4948 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
+- (4948 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+- (4948 ms) - 2022-3-26 17:24:58[DEBUG](DefaultSingletonBeanRegistry.java:215) Creating shared instance of singleton bean 'multipartResolver'
+- (4949 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'multipartResolver'
+- (4971 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:506) Eagerly caching bean 'multipartResolver' to allow for resolving potential circular references
+- (4976 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'multipartResolver'
+- (4976 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+- (4977 ms) - 2022-3-26 17:24:58[DEBUG](AbstractApplicationContext.java:860) Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@7bd50300]
+- (4977 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'lifecycleProcessor'
+- (4977 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'multipartResolver'
+- (4978 ms) - 2022-3-26 17:24:58[DEBUG](DispatcherServlet.java:457) Using MultipartResolver [org.springframework.web.multipart.commons.CommonsMultipartResolver@231acb74]
+- (4980 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+- (4982 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+- (4983 ms) - 2022-3-26 17:24:58[DEBUG](DispatcherServlet.java:486) Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@936a8]
+- (4985 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+- (4991 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+- (4991 ms) - 2022-3-26 17:24:58[DEBUG](DispatcherServlet.java:508) Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@7b11bb80]
+- (4991 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+- (4992 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+- (4992 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+- (4992 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+- (4992 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+- (4993 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+- (4993 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+- (4994 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+- (4994 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+- (4996 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+- (4999 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+- (4999 ms) - 2022-3-26 17:24:58[DEBUG](DispatcherServlet.java:646) Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6119df03]
+- (4999 ms) - 2022-3-26 17:24:58[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0'
+- (5002 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:432) Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+- (5011 ms) - 2022-3-26 17:24:58[DEBUG](AbstractAutowireCapableBeanFactory.java:460) Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+- (5011 ms) - 2022-3-26 17:24:58[DEBUG](DispatcherServlet.java:708) Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@607f0b40]
+- (5011 ms) - 2022-3-26 17:24:58[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
+- (5012 ms) - 2022-3-26 17:24:58[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
+- (5012 ms) - 2022-3-26 17:24:58[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]
+- (5012 ms) - 2022-3-26 17:24:58[DEBUG](JndiTemplate.java:150) Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+- (5012 ms) - 2022-3-26 17:24:58[DEBUG](JndiLocatorSupport.java:101) Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+- (5013 ms) - 2022-3-26 17:24:58[DEBUG](JndiTemplate.java:150) Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+- (5013 ms) - 2022-3-26 17:24:58[DEBUG](JndiPropertySource.java:90) JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+- (5013 ms) - 2022-3-26 17:24:58[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+- (5013 ms) - 2022-3-26 17:24:58[DEBUG](PropertySourcesPropertyResolver.java:81) Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+- (5013 ms) - 2022-3-26 17:24:58[DEBUG](PropertySourcesPropertyResolver.java:103) Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+- (5014 ms) - 2022-3-26 17:24:58[DEBUG](FrameworkServlet.java:536) Published WebApplicationContext of servlet 'spring' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.spring]
+- (5014 ms) - 2022-3-26 17:24:58[ INFO](FrameworkServlet.java:476) FrameworkServlet 'spring': initialization completed in 1373 ms
+- (5014 ms) - 2022-3-26 17:24:58[DEBUG](HttpServletBean.java:139) Servlet 'spring' configured successfully
+- (7055 ms) - 2022-3-26 17:25:00[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/statics/js/jquery.js]
+- (7055 ms) - 2022-3-26 17:25:00[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/statics/css/login.css]
+- (7062 ms) - 2022-3-26 17:25:00[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /statics/js/jquery.js
+- (7062 ms) - 2022-3-26 17:25:00[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /statics/css/login.css
+- (7070 ms) - 2022-3-26 17:25:00[DEBUG](AbstractHandlerMethodMapping.java:237) Did not find handler method for [/statics/css/login.css]
+- (7071 ms) - 2022-3-26 17:25:00[DEBUG](AbstractUrlHandlerMapping.java:169) Matching patterns for request [/statics/css/login.css] are [/statics/**]
+- (7071 ms) - 2022-3-26 17:25:00[DEBUG](AbstractUrlHandlerMapping.java:194) URI Template variables for request [/statics/css/login.css] are {}
+- (7074 ms) - 2022-3-26 17:25:00[DEBUG](AbstractHandlerMethodMapping.java:237) Did not find handler method for [/statics/js/jquery.js]
+- (7079 ms) - 2022-3-26 17:25:00[DEBUG](AbstractUrlHandlerMapping.java:169) Matching patterns for request [/statics/js/jquery.js] are [/statics/**]
+- (7079 ms) - 2022-3-26 17:25:00[DEBUG](AbstractUrlHandlerMapping.java:194) URI Template variables for request [/statics/js/jquery.js] are {}
+- (7081 ms) - 2022-3-26 17:25:00[DEBUG](AbstractUrlHandlerMapping.java:124) Mapping [/statics/js/jquery.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@3467821c] and 1 interceptor
+- (7081 ms) - 2022-3-26 17:25:00[DEBUG](AbstractUrlHandlerMapping.java:124) Mapping [/statics/css/login.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@3467821c] and 1 interceptor
+- (7083 ms) - 2022-3-26 17:25:00[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/statics/js/jquery.js] is: -1
+- (7083 ms) - 2022-3-26 17:25:00[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/statics/css/login.css] is: -1
+- (7084 ms) - 2022-3-26 17:25:00[DEBUG](ResourceHttpRequestHandler.java:194) Trying relative path [css/login.css] against base location: ServletContext resource [/statics/]
+- (7110 ms) - 2022-3-26 17:25:00[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (7110 ms) - 2022-3-26 17:25:00[DEBUG](ResourceHttpRequestHandler.java:200) Found matching resource: ServletContext resource [/statics/css/login.css]
+- (7111 ms) - 2022-3-26 17:25:00[DEBUG](ResourceHttpRequestHandler.java:137) Determined media type 'text/css' for ServletContext resource [/statics/css/login.css]
+- (7111 ms) - 2022-3-26 17:25:00[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'sqlSessionFactory'
+- (7124 ms) - 2022-3-26 17:25:00[DEBUG](ResourceHttpRequestHandler.java:148) Resource not modified - returning 304
+- (7124 ms) - 2022-3-26 17:25:00[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (7124 ms) - 2022-3-26 17:25:00[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (7182 ms) - 2022-3-26 17:25:00[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/favicon.ico]
+- (7182 ms) - 2022-3-26 17:25:00[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /favicon.ico
+- (7184 ms) - 2022-3-26 17:25:00[DEBUG](AbstractHandlerMethodMapping.java:237) Did not find handler method for [/favicon.ico]
+- (7184 ms) - 2022-3-26 17:25:00[ WARN](DispatcherServlet.java:1101) No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'spring'
+- (7184 ms) - 2022-3-26 17:25:00[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (15717 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing POST request for [/login.html]
+- (15718 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /login.html
+- (15722 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.lang.String cn.smbms.controller.UserController.login(org.springframework.ui.Model,java.lang.String,java.lang.String,javax.servlet.http.HttpSession)]
+- (15722 ms) - 2022-3-26 17:25:09[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'userController'
+- (15809 ms) - 2022-3-26 17:25:09[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (15819 ms) - 2022-3-26 17:25:09[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22555f53] was not registered for synchronization because synchronization is not active
+- (15884 ms) - 2022-3-26 17:25:09[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (15885 ms) - 2022-3-26 17:25:09[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (15888 ms) - 2022-3-26 17:25:09[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (15893 ms) - 2022-3-26 17:25:09[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from user where userName=? and userPassword =? 
+- (15913 ms) - 2022-3-26 17:25:09[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: admin(String), 123456(String)
+- (16053 ms) - 2022-3-26 17:25:09[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22555f53]
+- (16053 ms) - 2022-3-26 17:25:09[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (16057 ms) - 2022-3-26 17:25:09[DEBUG](ContentNegotiatingViewResolver.java:324) Requested media types are [text/html;charset=UTF-8] based on Accept header types and producible media types [*/*])
+- (16064 ms) - 2022-3-26 17:25:09[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'redirect:Index'
+- (16064 ms) - 2022-3-26 17:25:09[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'redirect:Index.html'
+- (16064 ms) - 2022-3-26 17:25:09[DEBUG](ContentNegotiatingViewResolver.java:387) Returning redirect view [org.springframework.web.servlet.view.RedirectView: name 'redirect:Index'; URL [Index]]
+- (16064 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:1198) Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:Index'; URL [Index]] in DispatcherServlet with name 'spring'
+- (16066 ms) - 2022-3-26 17:25:09[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (16069 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/Index]
+- (16069 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /Index
+- (16069 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.lang.String cn.smbms.controller.PageController.handleRequestIndex(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception]
+- (16069 ms) - 2022-3-26 17:25:09[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'pageController'
+- (16069 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/Index] is: -1
+- (16089 ms) - 2022-3-26 17:25:09[DEBUG](ContentNegotiatingViewResolver.java:324) Requested media types are [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+- (16090 ms) - 2022-3-26 17:25:09[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'Index'
+- (16091 ms) - 2022-3-26 17:25:09[DEBUG](ContentNegotiatingViewResolver.java:399) Returning [org.springframework.web.servlet.view.JstlView: name 'Index'; URL [/jsp/Index.jsp]] based on requested media type 'text/html'
+- (16091 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:1198) Rendering view [org.springframework.web.servlet.view.JstlView: name 'Index'; URL [/jsp/Index.jsp]] in DispatcherServlet with name 'spring'
+- (16096 ms) - 2022-3-26 17:25:09[DEBUG](InternalResourceView.java:236) Forwarding to resource [/jsp/Index.jsp] in InternalResourceView 'Index'
+- (16263 ms) - 2022-3-26 17:25:09[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (16294 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/statics/css/admin.css]
+- (16294 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/statics/css/pintuer.css]
+- (16294 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /statics/css/admin.css
+- (16294 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /statics/css/pintuer.css
+- (16295 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/statics/js/jquery.js]
+- (16295 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /statics/js/jquery.js
+- (16296 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:237) Did not find handler method for [/statics/css/pintuer.css]
+- (16296 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:237) Did not find handler method for [/statics/css/admin.css]
+- (16296 ms) - 2022-3-26 17:25:09[DEBUG](AbstractUrlHandlerMapping.java:169) Matching patterns for request [/statics/css/pintuer.css] are [/statics/**]
+- (16297 ms) - 2022-3-26 17:25:09[DEBUG](AbstractUrlHandlerMapping.java:194) URI Template variables for request [/statics/css/pintuer.css] are {}
+- (16296 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:237) Did not find handler method for [/statics/js/jquery.js]
+- (16297 ms) - 2022-3-26 17:25:09[DEBUG](AbstractUrlHandlerMapping.java:124) Mapping [/statics/css/pintuer.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@3467821c] and 1 interceptor
+- (16297 ms) - 2022-3-26 17:25:09[DEBUG](AbstractUrlHandlerMapping.java:169) Matching patterns for request [/statics/js/jquery.js] are [/statics/**]
+- (16297 ms) - 2022-3-26 17:25:09[DEBUG](AbstractUrlHandlerMapping.java:169) Matching patterns for request [/statics/css/admin.css] are [/statics/**]
+- (16297 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/statics/css/pintuer.css] is: -1
+- (16297 ms) - 2022-3-26 17:25:09[DEBUG](AbstractUrlHandlerMapping.java:194) URI Template variables for request [/statics/css/admin.css] are {}
+- (16297 ms) - 2022-3-26 17:25:09[DEBUG](AbstractUrlHandlerMapping.java:194) URI Template variables for request [/statics/js/jquery.js] are {}
+- (16298 ms) - 2022-3-26 17:25:09[DEBUG](AbstractUrlHandlerMapping.java:124) Mapping [/statics/css/admin.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@3467821c] and 1 interceptor
+- (16297 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:194) Trying relative path [css/pintuer.css] against base location: ServletContext resource [/statics/]
+- (16298 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/statics/css/admin.css] is: -1
+- (16298 ms) - 2022-3-26 17:25:09[DEBUG](AbstractUrlHandlerMapping.java:124) Mapping [/statics/js/jquery.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@3467821c] and 1 interceptor
+- (16298 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:194) Trying relative path [css/admin.css] against base location: ServletContext resource [/statics/]
+- (16299 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/statics/js/jquery.js] is: -1
+- (16299 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:194) Trying relative path [js/jquery.js] against base location: ServletContext resource [/statics/]
+- (16320 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:200) Found matching resource: ServletContext resource [/statics/css/pintuer.css]
+- (16321 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:137) Determined media type 'text/css' for ServletContext resource [/statics/css/pintuer.css]
+- (16321 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:148) Resource not modified - returning 304
+- (16321 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (16321 ms) - 2022-3-26 17:25:09[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (16327 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:200) Found matching resource: ServletContext resource [/statics/css/admin.css]
+- (16328 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:137) Determined media type 'text/css' for ServletContext resource [/statics/css/admin.css]
+- (16328 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:148) Resource not modified - returning 304
+- (16328 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (16328 ms) - 2022-3-26 17:25:09[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (16332 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:200) Found matching resource: ServletContext resource [/statics/js/jquery.js]
+- (16332 ms) - 2022-3-26 17:25:09[DEBUG](ResourceHttpRequestHandler.java:137) Determined media type 'application/javascript' for ServletContext resource [/statics/js/jquery.js]
+- (16333 ms) - 2022-3-26 17:25:09[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/statics/images/logo.png]
+- (16333 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /statics/images/logo.png
+- (16334 ms) - 2022-3-26 17:25:09[DEBUG](AbstractHandlerMethodMapping.java:237) Did not find handler method for [/statics/images/logo.png]
+- (16335 ms) - 2022-3-26 17:25:10[DEBUG](AbstractUrlHandlerMapping.java:169) Matching patterns for request [/statics/images/logo.png] are [/statics/**]
+- (16335 ms) - 2022-3-26 17:25:10[DEBUG](AbstractUrlHandlerMapping.java:194) URI Template variables for request [/statics/images/logo.png] are {}
+- (16336 ms) - 2022-3-26 17:25:10[DEBUG](AbstractUrlHandlerMapping.java:124) Mapping [/statics/images/logo.png] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@3467821c] and 1 interceptor
+- (16337 ms) - 2022-3-26 17:25:10[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/statics/images/logo.png] is: -1
+- (16337 ms) - 2022-3-26 17:25:10[DEBUG](ResourceHttpRequestHandler.java:194) Trying relative path [images/logo.png] against base location: ServletContext resource [/statics/]
+- (16341 ms) - 2022-3-26 17:25:10[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (16342 ms) - 2022-3-26 17:25:10[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (16346 ms) - 2022-3-26 17:25:10[DEBUG](ResourceHttpRequestHandler.java:200) Found matching resource: ServletContext resource [/statics/images/logo.png]
+- (16346 ms) - 2022-3-26 17:25:10[DEBUG](ResourceHttpRequestHandler.java:137) Determined media type 'image/png' for ServletContext resource [/statics/images/logo.png]
+- (16347 ms) - 2022-3-26 17:25:10[DEBUG](ResourceHttpRequestHandler.java:148) Resource not modified - returning 304
+- (16347 ms) - 2022-3-26 17:25:10[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (16347 ms) - 2022-3-26 17:25:10[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (16364 ms) - 2022-3-26 17:25:10[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/Message]
+- (16364 ms) - 2022-3-26 17:25:10[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /Message
+- (16364 ms) - 2022-3-26 17:25:10[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.lang.String cn.smbms.controller.PageController.handleRequestMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model) throws java.lang.Exception]
+- (16365 ms) - 2022-3-26 17:25:10[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'pageController'
+- (16365 ms) - 2022-3-26 17:25:10[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/Message] is: -1
+- (16366 ms) - 2022-3-26 17:25:10[DEBUG](ContentNegotiatingViewResolver.java:324) Requested media types are [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+- (16366 ms) - 2022-3-26 17:25:10[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name 'Message'
+- (16366 ms) - 2022-3-26 17:25:10[DEBUG](ContentNegotiatingViewResolver.java:399) Returning [org.springframework.web.servlet.view.JstlView: name 'Message'; URL [/jsp/Message.jsp]] based on requested media type 'text/html'
+- (16366 ms) - 2022-3-26 17:25:10[DEBUG](DispatcherServlet.java:1198) Rendering view [org.springframework.web.servlet.view.JstlView: name 'Message'; URL [/jsp/Message.jsp]] in DispatcherServlet with name 'spring'
+- (16367 ms) - 2022-3-26 17:25:10[DEBUG](InternalResourceView.java:236) Forwarding to resource [/jsp/Message.jsp] in InternalResourceView 'Message'
+- (16581 ms) - 2022-3-26 17:25:10[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (17685 ms) - 2022-3-26 17:25:11[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/ClientList.do]
+- (17685 ms) - 2022-3-26 17:25:11[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /ClientList.do
+- (17686 ms) - 2022-3-26 17:25:11[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public org.springframework.web.servlet.ModelAndView cn.smbms.controller.ClientController.findAll(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpSession)]
+- (17686 ms) - 2022-3-26 17:25:11[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'clientController'
+- (17686 ms) - 2022-3-26 17:25:11[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/ClientList.do] is: -1
+- (17706 ms) - 2022-3-26 17:25:11[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (17707 ms) - 2022-3-26 17:25:11[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44a1bbab] was not registered for synchronization because synchronization is not active
+- (17707 ms) - 2022-3-26 17:25:11[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (17709 ms) - 2022-3-26 17:25:11[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (17709 ms) - 2022-3-26 17:25:11[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (17710 ms) - 2022-3-26 17:25:11[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from client 
+- (17710 ms) - 2022-3-26 17:25:11[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (17816 ms) - 2022-3-26 17:25:11[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44a1bbab]
+- (17816 ms) - 2022-3-26 17:25:11[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (17844 ms) - 2022-3-26 17:25:11[DEBUG](ContentNegotiatingViewResolver.java:324) Requested media types are [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+- (17844 ms) - 2022-3-26 17:25:11[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name '/Client/ClientManage'
+- (17844 ms) - 2022-3-26 17:25:11[DEBUG](ContentNegotiatingViewResolver.java:399) Returning [org.springframework.web.servlet.view.JstlView: name '/Client/ClientManage'; URL [/jsp//Client/ClientManage.jsp]] based on requested media type 'text/html'
+- (17844 ms) - 2022-3-26 17:25:11[DEBUG](DispatcherServlet.java:1198) Rendering view [org.springframework.web.servlet.view.JstlView: name '/Client/ClientManage'; URL [/jsp//Client/ClientManage.jsp]] in DispatcherServlet with name 'spring'
+- (17844 ms) - 2022-3-26 17:25:11[DEBUG](AbstractView.java:375) Added model object 'pageInfo' of type [com.github.pagehelper.PageInfo] to request in view with name '/Client/ClientManage'
+- (17844 ms) - 2022-3-26 17:25:11[DEBUG](AbstractView.java:375) Added model object 'org.springframework.validation.BindingResult.pageInfo' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name '/Client/ClientManage'
+- (17845 ms) - 2022-3-26 17:25:11[DEBUG](InternalResourceView.java:236) Forwarding to resource [/jsp//Client/ClientManage.jsp] in InternalResourceView '/Client/ClientManage'
+- (18184 ms) - 2022-3-26 17:25:11[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (18196 ms) - 2022-3-26 17:25:11[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/statics/js/pintuer.js]
+- (18197 ms) - 2022-3-26 17:25:11[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /statics/js/pintuer.js
+- (18198 ms) - 2022-3-26 17:25:11[DEBUG](AbstractHandlerMethodMapping.java:237) Did not find handler method for [/statics/js/pintuer.js]
+- (18198 ms) - 2022-3-26 17:25:11[DEBUG](AbstractUrlHandlerMapping.java:169) Matching patterns for request [/statics/js/pintuer.js] are [/statics/**]
+- (18198 ms) - 2022-3-26 17:25:11[DEBUG](AbstractUrlHandlerMapping.java:194) URI Template variables for request [/statics/js/pintuer.js] are {}
+- (18198 ms) - 2022-3-26 17:25:11[DEBUG](AbstractUrlHandlerMapping.java:124) Mapping [/statics/js/pintuer.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@3467821c] and 1 interceptor
+- (18198 ms) - 2022-3-26 17:25:11[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/statics/js/pintuer.js] is: -1
+- (18198 ms) - 2022-3-26 17:25:11[DEBUG](ResourceHttpRequestHandler.java:194) Trying relative path [js/pintuer.js] against base location: ServletContext resource [/statics/]
+- (18211 ms) - 2022-3-26 17:25:11[DEBUG](ResourceHttpRequestHandler.java:200) Found matching resource: ServletContext resource [/statics/js/pintuer.js]
+- (18211 ms) - 2022-3-26 17:25:11[DEBUG](ResourceHttpRequestHandler.java:137) Determined media type 'application/javascript' for ServletContext resource [/statics/js/pintuer.js]
+- (18212 ms) - 2022-3-26 17:25:11[DEBUG](ResourceHttpRequestHandler.java:148) Resource not modified - returning 304
+- (18212 ms) - 2022-3-26 17:25:11[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (18213 ms) - 2022-3-26 17:25:11[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (19664 ms) - 2022-3-26 17:25:13[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/RoomList.do]
+- (19664 ms) - 2022-3-26 17:25:13[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /RoomList.do
+- (19664 ms) - 2022-3-26 17:25:13[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public org.springframework.web.servlet.ModelAndView cn.smbms.controller.RoomController.findAll(int,int,javax.servlet.http.HttpSession)]
+- (19664 ms) - 2022-3-26 17:25:13[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (19664 ms) - 2022-3-26 17:25:13[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/RoomList.do] is: -1
+- (19670 ms) - 2022-3-26 17:25:13[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (19671 ms) - 2022-3-26 17:25:13[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67a0f82c] was not registered for synchronization because synchronization is not active
+- (19671 ms) - 2022-3-26 17:25:13[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (19672 ms) - 2022-3-26 17:25:13[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (19672 ms) - 2022-3-26 17:25:13[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (19673 ms) - 2022-3-26 17:25:13[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (19673 ms) - 2022-3-26 17:25:13[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (19704 ms) - 2022-3-26 17:25:13[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67a0f82c]
+- (19705 ms) - 2022-3-26 17:25:13[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (19705 ms) - 2022-3-26 17:25:13[DEBUG](ContentNegotiatingViewResolver.java:324) Requested media types are [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] based on Accept header types and producible media types [*/*])
+- (19705 ms) - 2022-3-26 17:25:13[DEBUG](AbstractAutowireCapableBeanFactory.java:1557) Invoking afterPropertiesSet() on bean with name '/Room/RoomManage'
+- (19705 ms) - 2022-3-26 17:25:13[DEBUG](ContentNegotiatingViewResolver.java:399) Returning [org.springframework.web.servlet.view.JstlView: name '/Room/RoomManage'; URL [/jsp//Room/RoomManage.jsp]] based on requested media type 'text/html'
+- (19705 ms) - 2022-3-26 17:25:13[DEBUG](DispatcherServlet.java:1198) Rendering view [org.springframework.web.servlet.view.JstlView: name '/Room/RoomManage'; URL [/jsp//Room/RoomManage.jsp]] in DispatcherServlet with name 'spring'
+- (19705 ms) - 2022-3-26 17:25:13[DEBUG](AbstractView.java:375) Added model object 'pageInfo' of type [com.github.pagehelper.PageInfo] to request in view with name '/Room/RoomManage'
+- (19705 ms) - 2022-3-26 17:25:13[DEBUG](AbstractView.java:375) Added model object 'org.springframework.validation.BindingResult.pageInfo' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name '/Room/RoomManage'
+- (19706 ms) - 2022-3-26 17:25:13[DEBUG](InternalResourceView.java:236) Forwarding to resource [/jsp//Room/RoomManage.jsp] in InternalResourceView '/Room/RoomManage'
+- (19942 ms) - 2022-3-26 17:25:13[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (94283 ms) - 2022-3-26 17:26:27[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (94283 ms) - 2022-3-26 17:26:27[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (94283 ms) - 2022-3-26 17:26:27[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (94284 ms) - 2022-3-26 17:26:27[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (94284 ms) - 2022-3-26 17:26:27[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (94284 ms) - 2022-3-26 17:26:27[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (94284 ms) - 2022-3-26 17:26:27[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@437eadbd] was not registered for synchronization because synchronization is not active
+- (94285 ms) - 2022-3-26 17:26:27[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (94286 ms) - 2022-3-26 17:26:27[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (94287 ms) - 2022-3-26 17:26:27[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (94288 ms) - 2022-3-26 17:26:27[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (94288 ms) - 2022-3-26 17:26:27[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (94290 ms) - 2022-3-26 17:26:27[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@437eadbd]
+- (94290 ms) - 2022-3-26 17:26:27[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (94332 ms) - 2022-3-26 17:26:27[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (94332 ms) - 2022-3-26 17:26:27[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (94332 ms) - 2022-3-26 17:26:27[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (1639482 ms) - 2022-3-26 17:52:13[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (1639484 ms) - 2022-3-26 17:52:13[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (1639486 ms) - 2022-3-26 17:52:13[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (1639487 ms) - 2022-3-26 17:52:13[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (1639487 ms) - 2022-3-26 17:52:13[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (1639490 ms) - 2022-3-26 17:52:13[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (1639492 ms) - 2022-3-26 17:52:13[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12af6ef3] was not registered for synchronization because synchronization is not active
+- (1639492 ms) - 2022-3-26 17:52:13[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (1639494 ms) - 2022-3-26 17:52:13[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (1639494 ms) - 2022-3-26 17:52:13[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (1639495 ms) - 2022-3-26 17:52:13[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (1639495 ms) - 2022-3-26 17:52:13[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (1639500 ms) - 2022-3-26 17:52:13[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12af6ef3]
+- (1639501 ms) - 2022-3-26 17:52:13[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (1639504 ms) - 2022-3-26 17:52:13[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (1639504 ms) - 2022-3-26 17:52:13[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (1639505 ms) - 2022-3-26 17:52:13[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (1667598 ms) - 2022-3-26 17:52:41[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (1667598 ms) - 2022-3-26 17:52:41[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (1667599 ms) - 2022-3-26 17:52:41[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (1667599 ms) - 2022-3-26 17:52:41[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (1667599 ms) - 2022-3-26 17:52:41[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (1667599 ms) - 2022-3-26 17:52:41[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (1667600 ms) - 2022-3-26 17:52:41[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@508159e] was not registered for synchronization because synchronization is not active
+- (1667600 ms) - 2022-3-26 17:52:41[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (1667601 ms) - 2022-3-26 17:52:41[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (1667602 ms) - 2022-3-26 17:52:41[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (1667602 ms) - 2022-3-26 17:52:41[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (1667602 ms) - 2022-3-26 17:52:41[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (1667605 ms) - 2022-3-26 17:52:41[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@508159e]
+- (1667605 ms) - 2022-3-26 17:52:41[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (1667607 ms) - 2022-3-26 17:52:41[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (1667607 ms) - 2022-3-26 17:52:41[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (1667607 ms) - 2022-3-26 17:52:41[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (1731521 ms) - 2022-3-26 17:53:45[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (1731521 ms) - 2022-3-26 17:53:45[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (1731522 ms) - 2022-3-26 17:53:45[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (1731522 ms) - 2022-3-26 17:53:45[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (1731523 ms) - 2022-3-26 17:53:45[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (1731523 ms) - 2022-3-26 17:53:45[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (1731523 ms) - 2022-3-26 17:53:45[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63e147e5] was not registered for synchronization because synchronization is not active
+- (1731523 ms) - 2022-3-26 17:53:45[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (1731524 ms) - 2022-3-26 17:53:45[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (1731524 ms) - 2022-3-26 17:53:45[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (1731525 ms) - 2022-3-26 17:53:45[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (1731525 ms) - 2022-3-26 17:53:45[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (1731527 ms) - 2022-3-26 17:53:45[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63e147e5]
+- (1731527 ms) - 2022-3-26 17:53:45[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (1731528 ms) - 2022-3-26 17:53:45[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (1731528 ms) - 2022-3-26 17:53:45[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (1731528 ms) - 2022-3-26 17:53:45[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (1745414 ms) - 2022-3-26 17:53:59[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (1745414 ms) - 2022-3-26 17:53:59[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (1745415 ms) - 2022-3-26 17:53:59[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (1745415 ms) - 2022-3-26 17:53:59[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (1745415 ms) - 2022-3-26 17:53:59[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (1745415 ms) - 2022-3-26 17:53:59[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (1745416 ms) - 2022-3-26 17:53:59[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d1b6195] was not registered for synchronization because synchronization is not active
+- (1745416 ms) - 2022-3-26 17:53:59[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (1745417 ms) - 2022-3-26 17:53:59[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (1745418 ms) - 2022-3-26 17:53:59[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (1745418 ms) - 2022-3-26 17:53:59[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (1745418 ms) - 2022-3-26 17:53:59[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (1745420 ms) - 2022-3-26 17:53:59[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d1b6195]
+- (1745420 ms) - 2022-3-26 17:53:59[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (1745421 ms) - 2022-3-26 17:53:59[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (1745421 ms) - 2022-3-26 17:53:59[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (1745422 ms) - 2022-3-26 17:53:59[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (1761294 ms) - 2022-3-26 17:54:14[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (1761294 ms) - 2022-3-26 17:54:14[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (1761295 ms) - 2022-3-26 17:54:14[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (1761295 ms) - 2022-3-26 17:54:14[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (1761295 ms) - 2022-3-26 17:54:14[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (1761296 ms) - 2022-3-26 17:54:14[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (1761296 ms) - 2022-3-26 17:54:14[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f38b498] was not registered for synchronization because synchronization is not active
+- (1761296 ms) - 2022-3-26 17:54:14[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (1761297 ms) - 2022-3-26 17:54:14[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (1761298 ms) - 2022-3-26 17:54:14[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (1761298 ms) - 2022-3-26 17:54:14[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (1761299 ms) - 2022-3-26 17:54:14[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (1761300 ms) - 2022-3-26 17:54:14[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f38b498]
+- (1761300 ms) - 2022-3-26 17:54:14[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (1761301 ms) - 2022-3-26 17:54:14[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (1761301 ms) - 2022-3-26 17:54:14[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (1761301 ms) - 2022-3-26 17:54:14[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (1773090 ms) - 2022-3-26 17:54:26[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (1773091 ms) - 2022-3-26 17:54:26[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (1773091 ms) - 2022-3-26 17:54:26[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (1773091 ms) - 2022-3-26 17:54:26[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (1773091 ms) - 2022-3-26 17:54:26[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (1773092 ms) - 2022-3-26 17:54:26[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (1773092 ms) - 2022-3-26 17:54:26[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4db26846] was not registered for synchronization because synchronization is not active
+- (1773092 ms) - 2022-3-26 17:54:26[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (1773094 ms) - 2022-3-26 17:54:26[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (1773094 ms) - 2022-3-26 17:54:26[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (1773095 ms) - 2022-3-26 17:54:26[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (1773095 ms) - 2022-3-26 17:54:26[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (1773099 ms) - 2022-3-26 17:54:26[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4db26846]
+- (1773099 ms) - 2022-3-26 17:54:26[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (1773100 ms) - 2022-3-26 17:54:26[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (1773100 ms) - 2022-3-26 17:54:26[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (1773100 ms) - 2022-3-26 17:54:26[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (1786789 ms) - 2022-3-26 17:54:40[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (1786789 ms) - 2022-3-26 17:54:40[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (1786790 ms) - 2022-3-26 17:54:40[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (1786790 ms) - 2022-3-26 17:54:40[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (1786790 ms) - 2022-3-26 17:54:40[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (1786791 ms) - 2022-3-26 17:54:40[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (1786791 ms) - 2022-3-26 17:54:40[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@91cbf2f] was not registered for synchronization because synchronization is not active
+- (1786791 ms) - 2022-3-26 17:54:40[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (1786793 ms) - 2022-3-26 17:54:40[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (1786793 ms) - 2022-3-26 17:54:40[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (1786794 ms) - 2022-3-26 17:54:40[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (1786794 ms) - 2022-3-26 17:54:40[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (1786795 ms) - 2022-3-26 17:54:40[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@91cbf2f]
+- (1786796 ms) - 2022-3-26 17:54:40[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (1786797 ms) - 2022-3-26 17:54:40[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (1786797 ms) - 2022-3-26 17:54:40[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (1786797 ms) - 2022-3-26 17:54:40[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (1797758 ms) - 2022-3-26 17:54:51[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (1797758 ms) - 2022-3-26 17:54:51[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (1797758 ms) - 2022-3-26 17:54:51[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (1797758 ms) - 2022-3-26 17:54:51[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (1797758 ms) - 2022-3-26 17:54:51[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (1797759 ms) - 2022-3-26 17:54:51[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (1797759 ms) - 2022-3-26 17:54:51[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67341434] was not registered for synchronization because synchronization is not active
+- (1797760 ms) - 2022-3-26 17:54:51[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (1797761 ms) - 2022-3-26 17:54:51[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (1797762 ms) - 2022-3-26 17:54:51[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (1797762 ms) - 2022-3-26 17:54:51[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (1797762 ms) - 2022-3-26 17:54:51[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (1797763 ms) - 2022-3-26 17:54:51[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67341434]
+- (1797764 ms) - 2022-3-26 17:54:51[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (1797764 ms) - 2022-3-26 17:54:51[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (1797765 ms) - 2022-3-26 17:54:51[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (1797765 ms) - 2022-3-26 17:54:51[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (1850491 ms) - 2022-3-26 17:55:44[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (1850491 ms) - 2022-3-26 17:55:44[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (1850492 ms) - 2022-3-26 17:55:44[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (1850492 ms) - 2022-3-26 17:55:44[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (1850492 ms) - 2022-3-26 17:55:44[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (1850493 ms) - 2022-3-26 17:55:44[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (1850495 ms) - 2022-3-26 17:55:44[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f713f4] was not registered for synchronization because synchronization is not active
+- (1850496 ms) - 2022-3-26 17:55:44[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (1850497 ms) - 2022-3-26 17:55:44[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (1850498 ms) - 2022-3-26 17:55:44[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (1850498 ms) - 2022-3-26 17:55:44[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (1850499 ms) - 2022-3-26 17:55:44[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (1850500 ms) - 2022-3-26 17:55:44[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f713f4]
+- (1850500 ms) - 2022-3-26 17:55:44[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (1850501 ms) - 2022-3-26 17:55:44[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (1850502 ms) - 2022-3-26 17:55:44[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (1850502 ms) - 2022-3-26 17:55:44[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2095975 ms) - 2022-3-26 17:59:49[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (2095975 ms) - 2022-3-26 17:59:49[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (2095976 ms) - 2022-3-26 17:59:49[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (2095976 ms) - 2022-3-26 17:59:49[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (2095976 ms) - 2022-3-26 17:59:49[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (2095977 ms) - 2022-3-26 17:59:49[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (2095978 ms) - 2022-3-26 17:59:49[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67be22ac] was not registered for synchronization because synchronization is not active
+- (2095978 ms) - 2022-3-26 17:59:49[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (2095978 ms) - 2022-3-26 17:59:49[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (2095979 ms) - 2022-3-26 17:59:49[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (2095979 ms) - 2022-3-26 17:59:49[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (2095979 ms) - 2022-3-26 17:59:49[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (2095980 ms) - 2022-3-26 17:59:49[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67be22ac]
+- (2095980 ms) - 2022-3-26 17:59:49[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (2095981 ms) - 2022-3-26 17:59:49[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (2095981 ms) - 2022-3-26 17:59:49[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2095981 ms) - 2022-3-26 17:59:49[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2152755 ms) - 2022-3-26 18:00:46[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (2152755 ms) - 2022-3-26 18:00:46[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (2152756 ms) - 2022-3-26 18:00:46[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (2152757 ms) - 2022-3-26 18:00:46[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (2152757 ms) - 2022-3-26 18:00:46[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (2152758 ms) - 2022-3-26 18:00:46[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (2152758 ms) - 2022-3-26 18:00:46[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37f34493] was not registered for synchronization because synchronization is not active
+- (2152758 ms) - 2022-3-26 18:00:46[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (2152759 ms) - 2022-3-26 18:00:46[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (2152760 ms) - 2022-3-26 18:00:46[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (2152760 ms) - 2022-3-26 18:00:46[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (2152760 ms) - 2022-3-26 18:00:46[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (2152761 ms) - 2022-3-26 18:00:46[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37f34493]
+- (2152761 ms) - 2022-3-26 18:00:46[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (2152762 ms) - 2022-3-26 18:00:46[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (2152762 ms) - 2022-3-26 18:00:46[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2152762 ms) - 2022-3-26 18:00:46[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2154792 ms) - 2022-3-26 18:00:48[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (2154792 ms) - 2022-3-26 18:00:48[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (2154792 ms) - 2022-3-26 18:00:48[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (2154792 ms) - 2022-3-26 18:00:48[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (2154793 ms) - 2022-3-26 18:00:48[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (2154793 ms) - 2022-3-26 18:00:48[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (2154793 ms) - 2022-3-26 18:00:48[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ff1f90d] was not registered for synchronization because synchronization is not active
+- (2154793 ms) - 2022-3-26 18:00:48[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (2154794 ms) - 2022-3-26 18:00:48[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (2154794 ms) - 2022-3-26 18:00:48[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (2154795 ms) - 2022-3-26 18:00:48[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (2154796 ms) - 2022-3-26 18:00:48[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (2154798 ms) - 2022-3-26 18:00:48[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6ff1f90d]
+- (2154798 ms) - 2022-3-26 18:00:48[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (2154799 ms) - 2022-3-26 18:00:48[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (2154799 ms) - 2022-3-26 18:00:48[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2154799 ms) - 2022-3-26 18:00:48[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2306452 ms) - 2022-3-26 18:03:20[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (2306452 ms) - 2022-3-26 18:03:20[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (2306453 ms) - 2022-3-26 18:03:20[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (2306453 ms) - 2022-3-26 18:03:20[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (2306453 ms) - 2022-3-26 18:03:20[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (2306454 ms) - 2022-3-26 18:03:20[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (2306454 ms) - 2022-3-26 18:03:20[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b506ccf] was not registered for synchronization because synchronization is not active
+- (2306454 ms) - 2022-3-26 18:03:20[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (2306455 ms) - 2022-3-26 18:03:20[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (2306456 ms) - 2022-3-26 18:03:20[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (2306456 ms) - 2022-3-26 18:03:20[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (2306456 ms) - 2022-3-26 18:03:20[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (2306457 ms) - 2022-3-26 18:03:20[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b506ccf]
+- (2306458 ms) - 2022-3-26 18:03:20[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (2306458 ms) - 2022-3-26 18:03:20[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (2306459 ms) - 2022-3-26 18:03:20[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2306459 ms) - 2022-3-26 18:03:20[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2320403 ms) - 2022-3-26 18:03:34[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (2320404 ms) - 2022-3-26 18:03:34[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (2320405 ms) - 2022-3-26 18:03:34[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (2320405 ms) - 2022-3-26 18:03:34[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (2320405 ms) - 2022-3-26 18:03:34[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (2320406 ms) - 2022-3-26 18:03:34[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (2320406 ms) - 2022-3-26 18:03:34[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4847ac49] was not registered for synchronization because synchronization is not active
+- (2320406 ms) - 2022-3-26 18:03:34[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (2320407 ms) - 2022-3-26 18:03:34[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (2320408 ms) - 2022-3-26 18:03:34[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (2320408 ms) - 2022-3-26 18:03:34[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (2320408 ms) - 2022-3-26 18:03:34[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (2320410 ms) - 2022-3-26 18:03:34[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4847ac49]
+- (2320410 ms) - 2022-3-26 18:03:34[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (2320411 ms) - 2022-3-26 18:03:34[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (2320412 ms) - 2022-3-26 18:03:34[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2320412 ms) - 2022-3-26 18:03:34[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2322848 ms) - 2022-3-26 18:03:36[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (2322848 ms) - 2022-3-26 18:03:36[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (2322848 ms) - 2022-3-26 18:03:36[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (2322848 ms) - 2022-3-26 18:03:36[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (2322848 ms) - 2022-3-26 18:03:36[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (2322849 ms) - 2022-3-26 18:03:36[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (2322850 ms) - 2022-3-26 18:03:36[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d675ff] was not registered for synchronization because synchronization is not active
+- (2322850 ms) - 2022-3-26 18:03:36[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (2322850 ms) - 2022-3-26 18:03:36[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (2322851 ms) - 2022-3-26 18:03:36[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (2322851 ms) - 2022-3-26 18:03:36[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (2322851 ms) - 2022-3-26 18:03:36[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (2322853 ms) - 2022-3-26 18:03:36[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d675ff]
+- (2322853 ms) - 2022-3-26 18:03:36[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (2322854 ms) - 2022-3-26 18:03:36[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (2322855 ms) - 2022-3-26 18:03:36[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2322855 ms) - 2022-3-26 18:03:36[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2324044 ms) - 2022-3-26 18:03:37[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (2324045 ms) - 2022-3-26 18:03:37[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (2324045 ms) - 2022-3-26 18:03:37[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (2324045 ms) - 2022-3-26 18:03:37[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (2324045 ms) - 2022-3-26 18:03:37[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (2324046 ms) - 2022-3-26 18:03:37[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (2324046 ms) - 2022-3-26 18:03:37[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e24a355] was not registered for synchronization because synchronization is not active
+- (2324046 ms) - 2022-3-26 18:03:37[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (2324047 ms) - 2022-3-26 18:03:37[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (2324047 ms) - 2022-3-26 18:03:37[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (2324047 ms) - 2022-3-26 18:03:37[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (2324047 ms) - 2022-3-26 18:03:37[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (2324048 ms) - 2022-3-26 18:03:37[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e24a355]
+- (2324048 ms) - 2022-3-26 18:03:37[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (2324049 ms) - 2022-3-26 18:03:37[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (2324050 ms) - 2022-3-26 18:03:37[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2324050 ms) - 2022-3-26 18:03:37[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2410894 ms) - 2022-3-26 18:05:04[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing POST request for [/loginClient]
+- (2410894 ms) - 2022-3-26 18:05:04[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /loginClient
+- (2410895 ms) - 2022-3-26 18:05:04[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]
+- (2410895 ms) - 2022-3-26 18:05:04[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'clientController'
+- (2411241 ms) - 2022-3-26 18:05:04[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2411246 ms) - 2022-3-26 18:05:04[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2411246 ms) - 2022-3-26 18:05:04[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2411247 ms) - 2022-3-26 18:05:04[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2411247 ms) - 2022-3-26 18:05:04[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2449227 ms) - 2022-3-26 18:05:42[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (2449228 ms) - 2022-3-26 18:05:42[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (2449228 ms) - 2022-3-26 18:05:42[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (2449228 ms) - 2022-3-26 18:05:42[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (2449228 ms) - 2022-3-26 18:05:42[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (2449228 ms) - 2022-3-26 18:05:42[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (2449229 ms) - 2022-3-26 18:05:42[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4268dbc7] was not registered for synchronization because synchronization is not active
+- (2449229 ms) - 2022-3-26 18:05:42[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (2449230 ms) - 2022-3-26 18:05:42[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (2449230 ms) - 2022-3-26 18:05:42[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (2449230 ms) - 2022-3-26 18:05:42[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (2449230 ms) - 2022-3-26 18:05:42[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (2449231 ms) - 2022-3-26 18:05:42[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4268dbc7]
+- (2449231 ms) - 2022-3-26 18:05:42[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (2449232 ms) - 2022-3-26 18:05:42[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (2449232 ms) - 2022-3-26 18:05:42[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2449232 ms) - 2022-3-26 18:05:42[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2457372 ms) - 2022-3-26 18:05:51[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing POST request for [/loginClient]
+- (2457372 ms) - 2022-3-26 18:05:51[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /loginClient
+- (2457372 ms) - 2022-3-26 18:05:51[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]
+- (2457373 ms) - 2022-3-26 18:05:51[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'clientController'
+- (2457373 ms) - 2022-3-26 18:05:51[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2457373 ms) - 2022-3-26 18:05:51[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2457374 ms) - 2022-3-26 18:05:51[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2457374 ms) - 2022-3-26 18:05:51[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2457374 ms) - 2022-3-26 18:05:51[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2467712 ms) - 2022-3-26 18:06:01[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing POST request for [/loginClient]
+- (2467712 ms) - 2022-3-26 18:06:01[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /loginClient
+- (2467712 ms) - 2022-3-26 18:06:01[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]
+- (2467712 ms) - 2022-3-26 18:06:01[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'clientController'
+- (2467713 ms) - 2022-3-26 18:06:01[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2467713 ms) - 2022-3-26 18:06:01[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2467713 ms) - 2022-3-26 18:06:01[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2467714 ms) - 2022-3-26 18:06:01[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2467714 ms) - 2022-3-26 18:06:01[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2505292 ms) - 2022-3-26 18:06:38[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing POST request for [/loginClient]
+- (2505292 ms) - 2022-3-26 18:06:38[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /loginClient
+- (2505292 ms) - 2022-3-26 18:06:38[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]
+- (2505293 ms) - 2022-3-26 18:06:38[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'clientController'
+- (2505294 ms) - 2022-3-26 18:06:38[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2505294 ms) - 2022-3-26 18:06:38[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2505294 ms) - 2022-3-26 18:06:38[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2505294 ms) - 2022-3-26 18:06:38[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2505294 ms) - 2022-3-26 18:06:38[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (2521842 ms) - 2022-3-26 18:06:55[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing POST request for [/loginClient]
+- (2521842 ms) - 2022-3-26 18:06:55[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /loginClient
+- (2521842 ms) - 2022-3-26 18:06:55[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]
+- (2521842 ms) - 2022-3-26 18:06:55[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'clientController'
+- (2521843 ms) - 2022-3-26 18:06:55[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2521843 ms) - 2022-3-26 18:06:55[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2521843 ms) - 2022-3-26 18:06:55[DEBUG](AbstractHandlerExceptionResolver.java:132) Resolving exception from handler [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]: org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported
+- (2521843 ms) - 2022-3-26 18:06:55[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (2521843 ms) - 2022-3-26 18:06:55[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (3329523 ms) - 2022-3-26 18:20:23[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing POST request for [/loginClient]
+- (3329523 ms) - 2022-3-26 18:20:23[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /loginClient
+- (3329523 ms) - 2022-3-26 18:20:23[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.Map<java.lang.String, java.lang.Object> cn.smbms.controller.ClientController.login(cn.smbms.pojo.Client)]
+- (3329523 ms) - 2022-3-26 18:20:23[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'clientController'
+- (3329524 ms) - 2022-3-26 18:20:23[DEBUG](AbstractMessageConverterMethodArgumentResolver.java:140) Reading [class cn.smbms.pojo.Client] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (3329556 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (3329556 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf829c7] was not registered for synchronization because synchronization is not active
+- (3329557 ms) - 2022-3-26 18:20:23[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (3329557 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (3329558 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (3329558 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from users where userId=? and passWord =? 
+- (3329558 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: admin(String), 123456(String)
+- (3329918 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf829c7]
+- (3329918 ms) - 2022-3-26 18:20:23[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (3329922 ms) - 2022-3-26 18:20:23[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [{code=200}] as "application/json" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (3329922 ms) - 2022-3-26 18:20:23[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (3329922 ms) - 2022-3-26 18:20:23[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (3330119 ms) - 2022-3-26 18:20:23[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing GET request for [/findAllRoomVue]
+- (3330119 ms) - 2022-3-26 18:20:23[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findAllRoomVue
+- (3330119 ms) - 2022-3-26 18:20:23[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findAll()]
+- (3330119 ms) - 2022-3-26 18:20:23[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (3330120 ms) - 2022-3-26 18:20:23[DEBUG](DispatcherServlet.java:906) Last-Modified value for [/findAllRoomVue] is: -1
+- (3330120 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (3330120 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697416ee] was not registered for synchronization because synchronization is not active
+- (3330120 ms) - 2022-3-26 18:20:23[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (3330122 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (3330123 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (3330124 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room 
+- (3330124 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 
+- (3330126 ms) - 2022-3-26 18:20:23[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697416ee]
+- (3330126 ms) - 2022-3-26 18:20:23[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (3330127 ms) - 2022-3-26 18:20:23[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=11, price='20000/平', type='三室一厅', area='120平', address='长沙岳麓区', total=17}, Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (3330127 ms) - 2022-3-26 18:20:23[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (3330127 ms) - 2022-3-26 18:20:23[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (3334675 ms) - 2022-3-26 18:20:28[DEBUG](DispatcherServlet.java:819) DispatcherServlet with name 'spring' processing POST request for [/findRoomById]
+- (3334675 ms) - 2022-3-26 18:20:28[DEBUG](AbstractHandlerMethodMapping.java:229) Looking up handler method for path /findRoomById
+- (3334675 ms) - 2022-3-26 18:20:28[DEBUG](AbstractHandlerMethodMapping.java:234) Returning handler method [public java.util.List<cn.smbms.pojo.Room> cn.smbms.controller.RoomController.findById(java.util.HashMap<java.lang.String, java.lang.String>)]
+- (3334675 ms) - 2022-3-26 18:20:28[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'roomController'
+- (3334676 ms) - 2022-3-26 18:20:28[DEBUG](AbstractMessageConverterMethodArgumentResolver.java:140) Reading [java.util.HashMap<java.lang.String, java.lang.String>] as "application/json;charset=UTF-8" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (3334677 ms) - 2022-3-26 18:20:28[DEBUG](JakartaCommonsLoggingImpl.java:46) Creating a new SqlSession
+- (3334677 ms) - 2022-3-26 18:20:28[DEBUG](JakartaCommonsLoggingImpl.java:46) SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b7a8555] was not registered for synchronization because synchronization is not active
+- (3334771 ms) - 2022-3-26 18:20:28[DEBUG](DataSourceUtils.java:110) Fetching JDBC Connection from DataSource
+- (3334772 ms) - 2022-3-26 18:20:28[DEBUG](JakartaCommonsLoggingImpl.java:46) JDBC Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver] will not be managed by Spring
+- (3334773 ms) - 2022-3-26 18:20:28[DEBUG](JakartaCommonsLoggingImpl.java:46) ooo Using Connection [jdbc:mysql://127.0.0.1:3306/vuexms?useUnicode=true&characterEncoding=utf-8, UserName=root@localhost, MySQL-AB JDBC Driver]
+- (3334773 ms) - 2022-3-26 18:20:28[DEBUG](JakartaCommonsLoggingImpl.java:46) ==>  Preparing: select * from room where roomId=? 
+- (3334773 ms) - 2022-3-26 18:20:28[DEBUG](JakartaCommonsLoggingImpl.java:46) ==> Parameters: 12(String)
+- (3334774 ms) - 2022-3-26 18:20:28[DEBUG](JakartaCommonsLoggingImpl.java:46) Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b7a8555]
+- (3334774 ms) - 2022-3-26 18:20:28[DEBUG](DataSourceUtils.java:327) Returning JDBC Connection to DataSource
+- (3334775 ms) - 2022-3-26 18:20:28[DEBUG](AbstractMessageConverterMethodProcessor.java:145) Written [[Room{roomId=12, price='10000/平', type='三室一厅', area='120平', address='星沙奥园世家三期', total=10}]] as "application/json" using [com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter@22542712]
+- (3334775 ms) - 2022-3-26 18:20:28[DEBUG](DispatcherServlet.java:993) Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
+- (3334775 ms) - 2022-3-26 18:20:28[DEBUG](FrameworkServlet.java:983) Successfully completed request
+- (3479729 ms) - 2022-3-26 18:22:53[ INFO](AbstractApplicationContext.java:1044) Closing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Mar 26 17:24:57 CST 2022]; parent: Root WebApplicationContext
+- (3479730 ms) - 2022-3-26 18:22:53[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'sqlSessionFactory'
+- (3479732 ms) - 2022-3-26 18:22:53[DEBUG](AbstractBeanFactory.java:243) Returning cached instance of singleton bean 'lifecycleProcessor'
+- (3479733 ms) - 2022-3-26 18:22:53[ INFO](DefaultSingletonBeanRegistry.java:444) Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2c2da9b8: defining beans [clientController,pageController,roomController,userController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.LocalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,org.springframework.web.servlet.handler.MappedInterceptor#1,multipartResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@3132be8a
+- (3479733 ms) - 2022-3-26 18:22:53[DEBUG](DefaultSingletonBeanRegistry.java:500) Retrieved dependent beans for bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#21383c0': [org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0]
+- (3479734 ms) - 2022-3-26 18:22:53[DEBUG](DefaultSingletonBeanRegistry.java:500) Retrieved dependent beans for bean 'org.springframework.http.converter.StringHttpMessageConverter#0#1': [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0]
+- (3479734 ms) - 2022-3-26 18:22:53[DEBUG](DefaultSingletonBeanRegistry.java:500) Retrieved dependent beans for bean '(inner bean)#57655b41': [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0]
+- (3479734 ms) - 2022-3-26 18:22:53[DEBUG](DefaultSingletonBeanRegistry.java:500) Retrieved dependent beans for bean 'cn.smbms.interceptor.LoginInterceptor#0': [org.springframework.web.servlet.handler.MappedInterceptor#1]
+- (3479734 ms) - 2022-3-26 18:22:53[DEBUG](DefaultSingletonBeanRegistry.java:500) Retrieved dependent beans for bean '(inner bean)#37b84958': [org.springframework.web.servlet.handler.MappedInterceptor#0]

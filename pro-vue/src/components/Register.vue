@@ -3,7 +3,7 @@
     <div class="login">
       <el-form :model="loginForm" status-icon :rules="rules" ref="loginForm" label-width="100px" class="demo-loginForm">
         <h1 class="title" style="padding-top: 20px;margin-bottom: 10px;">
-          管理员注册
+          客户注册
         </h1>
         <el-form-item label="账 号" prop="userId">
           <el-input type="text" v-model="loginForm.userId" autocomplete="off" placeholder="电话/身份证号"></el-input>

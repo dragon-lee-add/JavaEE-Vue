@@ -4,31 +4,19 @@
       <div class="nav">
         <ul class="ul-1">
           <li>
-            <el-link href="#" target="_blank" :underline="false"
-              >官方商城</el-link
-            >
+            <el-link href="#" target="_blank" :underline="false">官方商城</el-link>
             <el-divider direction="vertical" class="sep"></el-divider>
             <el-link href="#" target="_blank" :underline="false">MIUI</el-link>
             <el-divider direction="vertical" class="sep"></el-divider>
-            <el-link href="#" target="_blank" :underline="false"
-              >云服务</el-link
-            >
+            <el-link href="#" target="_blank" :underline="false">云服务</el-link>
             <el-divider direction="vertical" class="sep"></el-divider>
-            <el-link href="#" target="_blank" :underline="false"
-              >天星数科</el-link
-            >
+            <el-link href="#" target="_blank" :underline="false">天星数科</el-link>
             <el-divider direction="vertical" class="sep"></el-divider>
-            <el-link href="#" target="_blank" :underline="false"
-              >下载app</el-link
-            >
+            <el-link href="#" target="_blank" :underline="false">下载app</el-link>
             <el-divider direction="vertical" class="sep"></el-divider>
-            <el-link href="#" target="_blank" :underline="false"
-              >协议规则</el-link
-            >
+            <el-link href="#" target="_blank" :underline="false">协议规则</el-link>
             <el-divider direction="vertical" class="sep"></el-divider>
-            <el-link href="#" target="_blank" :underline="false"
-              >Select Location</el-link
-            >
+            <el-link href="#" target="_blank" :underline="false">Select Location</el-link>
           </li>
         </ul>
         <ul class="ul-2">
@@ -48,13 +36,9 @@
                 <el-button size="mini" type="text" @click="visible = false"
                   >取消</el-button
                 >
-                <el-button type="primary" size="mini" @click="logout"
-                  >确定</el-button
-                >
+                <el-button type="primary" size="mini" @click="logout">确定</el-button>
               </div>
-              <el-button type="text" slot="reference">
-                欢迎{{ name }}
-              </el-button>
+              <el-button type="text" slot="reference"> 欢迎{{ name }} </el-button>
             </el-popover>
             <el-popover
               placement="top-end"
@@ -78,10 +62,7 @@
       <div class="carousel">
         <el-carousel :interval="4000" type="card" height="350px">
           <el-carousel-item v-for="(item, index) in List" :key="index">
-            <el-image
-              :src="item.image"
-              style="height: 100%; width: 100%"
-            ></el-image>
+            <el-image :src="item.image" style="height: 100%; width: 100%"></el-image>
           </el-carousel-item>
         </el-carousel>
       </div>
@@ -133,7 +114,6 @@
   </div>
 </template>
 
-
 <script>
 import { getData } from "../utils/api.js";
 export default {
@@ -154,8 +134,8 @@ export default {
   methods: {
     async getList() {
       let res = await getData();
-      console.log(res)
-      this.listGood=res.data
+      console.log(res);
+      this.listGood = res.data;
     },
     getSwiper() {
       this.axios.get("../static/js/swiper.json", {}).then((response) => {

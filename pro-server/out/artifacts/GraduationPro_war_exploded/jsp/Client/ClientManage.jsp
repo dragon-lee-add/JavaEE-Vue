@@ -32,6 +32,8 @@
                 <th>年龄</th>
                 <th>电话</th>
                 <th>家庭住址</th>
+                <th>类型</th>
+                <th>面积</th>
                 <th>操作</th>
             </tr>
             <c:forEach items="${pageInfo.list}" var="client">
@@ -42,6 +44,8 @@
                     <td>${client.age}</td>
                     <td>${client.phone}</td>
                     <td>${client.addr}</td>
+                    <td>${client.room.type}</td>
+                    <td>${client.room.area}</td>
                     <td>
                         <div class="button-group">
                             <a href="${pageContext.request.contextPath}/ClientUp.do?id=${client.id}"
