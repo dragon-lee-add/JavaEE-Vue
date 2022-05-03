@@ -8,7 +8,7 @@ public interface ClientService {
     /**
      * 查询所有客户并分页
      */
-    public PageInfo<Client> findAllClientByPage(int page, int size);
+    public PageInfo<Client> findAllClientByPage();
 
 
     Client selectById(Integer id);

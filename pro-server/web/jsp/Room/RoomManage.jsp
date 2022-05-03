@@ -57,14 +57,14 @@
             <tr>
                 <td colspan="8">
 
-                    <div style="text-align: center;">当前 ${pageInfo.pageNum }页,总${pageInfo.pages }页,总 ${pageInfo.total }
+                    <div style="text-align: center;">当前 ${pageInfo.pageNum }页,${pageInfo.pageSize }条/页,总${pageInfo.pages }页,总 ${pageInfo.total }
                         条记录
                     </div>
                     <div class="pagelist">
-                        <a href="RoomList.do?page=1&size=5">首页</a>
-                        <a href="RoomList.do?page=${pageInfo.pageNum-1}&size=5">上一页</a>
-                        <a href="RoomList.do?page=${pageInfo.pageNum+1}&size=5">下一页</a>
-                        <a href="RoomList.do?page=${pageInfo.pages}&size=5">尾页</a>
+                        <a href="RoomList.do?page=1&pageSize=1">首页</a>
+                        <a href="RoomList.do?page=${pageInfo.pageNum-1}">上一页</a>
+                        <a href="RoomList.do?page=${pageInfo.pageNum+1}">下一页</a>
+                        <a href="RoomList.do?page=${pageInfo.pages}">尾页</a>
                     </div>
                 </td>
             </tr>

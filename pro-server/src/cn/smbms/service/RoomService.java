@@ -10,7 +10,7 @@ public interface RoomService {
     /**
      * 查询所有房型并分页
      */
-    public PageInfo<Room> findAllRoomByPage(int page, int size);
+    public PageInfo<Room> findAllRoomByPage();
 
 
 

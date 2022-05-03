@@ -2,12 +2,16 @@ package cn.smbms.controller;
 
 import cn.smbms.pojo.Room;
 import cn.smbms.service.RoomService;
+import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -51,10 +55,10 @@ public class RoomController {
      * 房型查询所有
      */
     @RequestMapping(value = "/RoomList.do")
-    public ModelAndView findAll(@RequestParam(defaultValue = "1") int page,
-                                @RequestParam(defaultValue = "5") int size, HttpSession session) {
+    public ModelAndView findAll(@RequestParam(required = false,defaultValue = "1",value = "page")Integer page, HttpSession session) {
         ModelAndView mv = new ModelAndView();
-        PageInfo<Room> pageInfo = roomService.findAllRoomByPage(page, size);
+        PageHelper.startPage(page,2);
+        PageInfo<Room> pageInfo = roomService.findAllRoomByPage();
         //数据存储到分页插件
         mv.addObject("pageInfo", pageInfo);
         //视图跳转

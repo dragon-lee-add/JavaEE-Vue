@@ -2,12 +2,16 @@ package cn.smbms.controller;
 
 import cn.smbms.pojo.Client;
 import cn.smbms.service.ClientService;
+import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -57,12 +61,12 @@ public class ClientController {
      * 客户查询所有
      */
     @RequestMapping(value = "/ClientList.do")
-    public ModelAndView findAll(@RequestParam(value = "page", defaultValue = "1") Integer page,
-                                @RequestParam(value = "size", defaultValue = "4") Integer size,
+    public ModelAndView findAll(@RequestParam(required = false,defaultValue = "1",value = "page")Integer page,
                               HttpSession session) {
         ModelAndView mv = new ModelAndView();
+        PageHelper.startPage(page,2);
         //分页查询
-        PageInfo<Client> pageInfo = clientService.findAllClientByPage(page,size);
+        PageInfo<Client> pageInfo = clientService.findAllClientByPage();
         mv.addObject("pageInfo", pageInfo);
         mv.setViewName("/Client/ClientManage");
         return mv;

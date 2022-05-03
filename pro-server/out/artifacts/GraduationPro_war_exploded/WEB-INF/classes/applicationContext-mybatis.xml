@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>  
-<beans xmlns="http://www.springframework.org/schema/beans"  
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
-        xmlns:aop="http://www.springframework.org/schema/aop"  
-        xmlns:p="http://www.springframework.org/schema/p"  
-        xmlns:tx="http://www.springframework.org/schema/tx"  
-        xmlns:context="http://www.springframework.org/schema/context"  
-        xsi:schemaLocation="   
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="
             http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd   
             http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd   
             http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 
@@ -20,9 +20,9 @@
     
     <!-- JNDI获取数据源(使用dbcp连接池) -->  
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" scope="singleton">
-    		<property name="driverClassName" value="${driver}" />  
-			<property name="url" value="${url}" />  
-			<property name="username" value="${user}" />  
+    		<property name="driverClassName" value="${driver}" />
+			<property name="url" value="${url}" />
+			<property name="username" value="${user}" />
 			<property name="password" value="${password}" />
 			<property name="initialSize" value="${initialSize}"/>
 			<property name="maxActive" value="${maxActive}"/>
@@ -45,13 +45,26 @@
     <!-- 事务管理 -->
    	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
    		<property name="dataSource" ref="dataSource"/>
-   	</bean> 
+   	</bean>
    	
    	<!-- 配置mybitas SqlSessionFactoryBean-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
     	<property name="dataSource" ref="dataSource"/>
     	<property name="configLocation" value="classpath:mybatis-config.xml"/>
-		<property name="mapperLocations" value="classpath*:/cn/smbms/dao/*Mapper.xml"></property>
+		<property name="mapperLocations" value="classpath*:/cn/smbms/dao/*Mapper.xml"/>
+		<!-- 分页的配置文件 -->
+		<!--<property name="plugins">-->
+            <!--<set>-->
+				<!--<bean class="com.github.pagehelper.PageInterceptor">-->
+					<!--<property name="properties">-->
+                        <!--<props>-->
+                            <!--<prop key="helperDialect">mysql</prop>-->
+                            <!--<prop key="resonable">true</prop>-->
+                        <!--</props>-->
+					<!--</property>-->
+				<!--</bean>-->
+            <!--</set>-->
+		<!--</property>-->
     </bean>
     
    	<!-- AOP 事务处理 开始 -->
@@ -82,8 +95,8 @@
 	<!--</tx:advice> -->
 	<!-- AOP 事务处理 结束 -->
 	
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">  
-         <property name="basePackage" value="cn.smbms.dao" />  
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+         <property name="basePackage" value="cn.smbms.dao" />
     </bean>
 
 
