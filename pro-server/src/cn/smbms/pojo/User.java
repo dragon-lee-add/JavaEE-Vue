@@ -1,8 +1,15 @@
 package cn.smbms.pojo;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotBlank;
+
 public class User {
     private Integer userId;
+    @NotBlank(message="账号不能为空")
+    @Length(max=13,message="账号长度小于13")
     private String userName;
+    @NotBlank(message="密码不能为空")
+    @Length(max=13,message="账号长度小于6")
     private String userPassword;
 
     public Integer getUserId() {
