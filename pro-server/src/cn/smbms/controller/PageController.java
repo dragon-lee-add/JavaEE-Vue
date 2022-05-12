@@ -36,6 +36,16 @@ public class PageController {
         return "EditPwd";
     }
 
+    @RequestMapping(value = "/FileUpload")
+    public String handleRequestFileUpload(HttpServletRequest request,
+                                       HttpServletResponse response, Model model) throws Exception {
+        return "FileUpload";
+    }
+    @RequestMapping(value = "/ExcelImport")
+    public String handleRequestExcelImport(HttpServletRequest request,
+                                          HttpServletResponse response, Model model) throws Exception {
+        return "ExcelImport";
+    }
     /**
      * 房型管理界面
      * @param request

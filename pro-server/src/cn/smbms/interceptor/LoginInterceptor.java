@@ -1,13 +1,13 @@
 package cn.smbms.interceptor;
 
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
 import cn.smbms.pojo.User;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * 登录拦截器
@@ -19,7 +19,7 @@ public class LoginInterceptor implements HandlerInterceptor {
             throws Exception {
         // 获取请求的URL
         String url = request.getRequestURI();
-        // URL:除了登录请求外，其他的URL都进行拦截控制
+        // URL:除了登录请求外，其他的URL都进行拦截控制。
         if (url.indexOf("/login") >= 0) {
             return true;
         }

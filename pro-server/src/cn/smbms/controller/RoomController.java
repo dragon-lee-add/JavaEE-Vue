@@ -57,7 +57,7 @@ public class RoomController {
     @RequestMapping(value = "/RoomList.do")
     public ModelAndView findAll(@RequestParam(required = false,defaultValue = "1",value = "page")Integer page, HttpSession session) {
         ModelAndView mv = new ModelAndView();
-        PageHelper.startPage(page,2);
+        PageHelper.startPage(page,10);
         PageInfo<Room> pageInfo = roomService.findAllRoomByPage();
         //数据存储到分页插件
         mv.addObject("pageInfo", pageInfo);

@@ -20,7 +20,7 @@ String path=request.getContextPath();
 </head>
 <body>
 <div class="panel admin-panel">
-    <div class="panel-head"><strong><span class="icon-key"></span> 修改密码</strong></div>
+    <div class="panel-head"><strong><span class="icon-key"></span>修改密码</strong></div>
     <div class="body-content">
         <fm:form   modelAttribute="user" method="post" class="form-x" action="${pageContext.request.contextPath}/editPwd.html">
             <div class="form-group">
@@ -29,7 +29,7 @@ String path=request.getContextPath();
                 </div>
                     <div class="field">
                         <%--<fm:errors path="userName"></fm:errors>--%>
-                        <input type="text"  class="input w50"  name="userName" size="50" placeholder="请输入账号" />
+                        <input type="text"  class="input w50"  name="userName" size="50" placeholder="请输入账号" data-validate="required:账号为输入" />
                     </div>
                 </div>
             <div class="form-group">
@@ -38,7 +38,7 @@ String path=request.getContextPath();
                 </div>
                 <div class="field">
                     <%--<fm:errors path="userPassword"></fm:errors>--%>
-                    <input type="password"  class="input w50"  name="userPassword" size="50" placeholder="请输入原始密码"  />
+                    <input type="password"  class="input w50"  name="userPassword" size="50" placeholder="请输入原始密码"  data-validate="required:原始密码不能为空" />
                 </div>
             </div>
             <div class="form-group">
@@ -60,7 +60,7 @@ String path=request.getContextPath();
             <div class="btn">
                     <span class="success" style="color: red;text-align: center">${msg}</span>
                 <div class="field">
-                    <button class="button bg-main icon-check-square-o" type="submit"> 修改</button>
+                    <button class="button bg-main icon-check-square-o" type="submit">修改</button>
                 </div>
             </div>
         </fm:form>

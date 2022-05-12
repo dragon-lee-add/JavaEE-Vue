@@ -22,7 +22,7 @@
         <form action="${pageContext.request.contextPath}/loginOut.html" method="post">
             <a class="button button-little bg-green" href="Index" target="_blank"><span class="icon-home"></span>后台首页</a>
             &nbsp;&nbsp;
-            <a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span> 清除缓存</a>
+            <a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span>清除缓存</a>
             &nbsp;&nbsp;
             <input type="submit" style="width: 120px;"
                    class="button button-little bg-yellow" value="退出登录">
@@ -38,8 +38,9 @@
         <li><a href="ClientList.do" target="right"><span class="icon-caret-right"></span>客户管理</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>高级设置</h2>
-    <ul>
+    <ul style="display:block">
         <li><a href="EditPwd" target="right"><span class="icon-caret-right"></span>修改管理员密码</a></li>
+        <li><a href="FileUpload" target="right"><span class="icon-caret-right"></span>资料上传</a></li>
     </ul>
 </div>
 <script type="text/javascript">

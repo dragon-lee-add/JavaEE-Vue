@@ -1,8 +1,12 @@
 package cn.smbms.pojo;
 
+import org.jeecgframework.poi.excel.annotation.Excel;
+
 public class Client {
     private Integer id;
+    @Excel(name="购买房型号",height=5,width=10)
     private Integer roomId;
+    @Excel(name="姓名",height=5,width=10)
     private String name;
     private String sex;
     private String phone;

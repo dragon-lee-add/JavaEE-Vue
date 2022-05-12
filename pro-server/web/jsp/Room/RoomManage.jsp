@@ -18,8 +18,8 @@
 <form id="form1" action="" method="post">
     <div class="panel admin-panel">
         <div class="panel-head">
-            <strong class="icon-reorder">房型列表</strong>
-            <div class="button-group" style="margin-left: 95%">
+            <strong class="icon-reorder"  style="padding-right: 60px">房型列表</strong>
+            <div class="button-group">
                 <a href="RoomAdd"
                    class="button border-green">新增</a>
             </div>
