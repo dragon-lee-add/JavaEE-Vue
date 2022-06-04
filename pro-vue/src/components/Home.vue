@@ -72,22 +72,80 @@
     <div class="content-box">
       <div id="box">
         <h2 style="margin-bottom: 10px">房型展示</h2>
-        <ul class="box-card">
-          <li v-for="(item, index) in listGood" :key="index">
-            <el-card>
-              <div @click="homeDetail(item.roomId)">
-                <el-image
-                  style="width: 100px; height: 100px; border-radius: 30%"
-                  :src="url"
-                ></el-image>
-                <p>面积：{{ item.area }}</p>
-                <p>价格：{{ item.price }}</p>
-                <p>房型：{{ item.type }}</p>
-                <p>位置：{{ item.address }}</p>
-              </div>
-            </el-card>
-          </li>
-        </ul>
+        <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
+          <el-tab-pane label="全部区域" name="first">
+            <ul class="box-card">
+              <li v-for="(item, index) in listGood" :key="index">
+                <el-card>
+                  <div @click="homeDetail(item.roomId)">
+                    <el-image
+                      style="width: 100px; height: 100px; border-radius: 30%"
+                      :src="url"
+                    ></el-image>
+                    <p>面积：{{ item.area }}</p>
+                    <p>价格：{{ item.price }}</p>
+                    <p>房型：{{ item.type }}</p>
+                    <p>位置：{{ item.address }}</p>
+                  </div>
+                </el-card>
+              </li>
+            </ul>
+          </el-tab-pane>
+          <el-tab-pane label="岳麓区" name="second">
+            <ul class="box-card">
+              <li v-for="(item, index) in list1" :key="index">
+                <el-card>
+                  <div @click="homeDetail(item.roomId)">
+                    <el-image
+                      style="width: 100px; height: 100px; border-radius: 30%"
+                      :src="url"
+                    ></el-image>
+                    <p>面积：{{ item.area }}</p>
+                    <p>价格：{{ item.price }}</p>
+                    <p>房型：{{ item.type }}</p>
+                    <p>位置：{{ item.address }}</p>
+                  </div>
+                </el-card>
+              </li>
+            </ul>
+          </el-tab-pane>
+          <el-tab-pane label="雨花区" name="third">
+            <ul class="box-card">
+              <li v-for="(item, index) in list3" :key="index">
+                <el-card>
+                  <div @click="homeDetail(item.roomId)">
+                    <el-image
+                      style="width: 100px; height: 100px; border-radius: 30%"
+                      :src="url"
+                    ></el-image>
+                    <p>面积：{{ item.area }}</p>
+                    <p>价格：{{ item.price }}</p>
+                    <p>房型：{{ item.type }}</p>
+                    <p>位置：{{ item.address }}</p>
+                  </div>
+                </el-card>
+              </li>
+            </ul>
+          </el-tab-pane>
+          <el-tab-pane label="芙蓉区" name="fourth">
+            <ul class="box-card">
+              <li v-for="(item, index) in list5" :key="index">
+                <el-card>
+                  <div @click="homeDetail(item.roomId)">
+                    <el-image
+                      style="width: 100px; height: 100px; border-radius: 30%"
+                      :src="url"
+                    ></el-image>
+                    <p>面积：{{ item.area }}</p>
+                    <p>价格：{{ item.price }}</p>
+                    <p>房型：{{ item.type }}</p>
+                    <p>位置：{{ item.address }}</p>
+                  </div>
+                </el-card>
+              </li>
+            </ul>
+          </el-tab-pane>
+        </el-tabs>
       </div>
     </div>
 
@@ -120,9 +178,16 @@ export default {
   data() {
     return {
       List: [],
-      listGood: [],
+      listGood: "",
+      listCategory: "",
       url: "../../static/img/img.jpeg",
       name: "",
+      activeName: "first",
+      list1: "",
+      list2: "",
+      list3: "",
+      list4: "",
+      list5: "",
     };
   },
   created() {
@@ -130,12 +195,69 @@ export default {
     this.getSwiper();
     this.isLogin = sessionStorage.getItem("isLogin");
     this.name = sessionStorage.getItem("userId");
+    this.getList1();
+    this.getList2();
+    this.getList3();
+    this.getList4();
+    this.getList5();
   },
   methods: {
+    handleClick(tab, event) {
+      console.log(tab, event);
+    },
+    getList1() {
+      this.axios
+        .post("/api/findRoomVue1", {
+          categoryId: 1,
+        })
+        .then((response) => {
+          this.list1 = response.data;
+        });
+    },
+    getList2() {
+      this.axios
+        .post("/api/findRoomVue2", {
+          categoryId: 2,
+        })
+        .then((response) => {
+          this.list2 = response.data;
+        });
+    },
+    getList3() {
+      this.axios
+        .post("/api/findRoomVue3", {
+          categoryId: 3,
+        })
+        .then((response) => {
+          this.list3 = response.data;
+        });
+    },
+    getList4() {
+      this.axios
+        .post("/api/findRoomVue4", {
+          categoryId: 4,
+        })
+        .then((response) => {
+          this.list4 = response.data;
+        });
+    },
+    getList5() {
+      this.axios
+        .post("/api/findRoomVue5", {
+          categoryId: 5,
+        })
+        .then((response) => {
+          this.list5 = response.data;
+        });
+    },
     async getList() {
       let res = await getData();
-      console.log(res);
       this.listGood = res.data;
+      this.listCategory = res.data.map((item, index) => {
+        let categoryName = item.category;
+        return categoryName;
+      });
+      console.log("data", this.listCategory);
     },
     getSwiper() {
       this.axios.get("../static/js/swiper.json", {}).then((response) => {
@@ -303,7 +425,7 @@ a:hover {
 }
 
 .content-box {
-  width: 700px;
+  width: 1000px;
   margin: auto;
   margin-bottom: 10px;
 }

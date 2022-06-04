@@ -2,9 +2,23 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
 <mapper namespace="cn.smbms.dao.RoomDao">
+    <resultMap id="baseResultMap" type="cn.smbms.pojo.Room">
+        <result column="roomId" jdbcType="INTEGER" property="roomId" />
+        <result column="price" jdbcType="VARCHAR" property="price" />
+        <result column="type" jdbcType="VARCHAR" property="type" />
+        <result column="area" jdbcType="VARCHAR" property="area" />
+        <result column="address" jdbcType="VARCHAR" property="address" />
+        <result column="total" jdbcType="VARCHAR" property="total" />
+        <result column="roomDescribe" jdbcType="VARCHAR" property="roomDescribe" />
+        <result column="categoryId" jdbcType="INTEGER" property="categoryId" />
+        <association property="category" javaType="cn.smbms.pojo.Category">
+            <result column="categoryId"  property="categoryId" />
+            <result column="categoryName"  property="categoryName" />
+        </association>
+    </resultMap>
     <!-- 查询所有 房型-->
-    <select id="selectAllRoom" resultType="cn.smbms.pojo.Room">
-    		select *   from  room
+    <select id="selectAllRoom" resultMap="baseResultMap">
+    		select *   from  room a left join category b on a.categoryId=b.categoryId
     </select>
     <!--删除-->
     <delete id="deleteRoom" parameterType="Integer">
@@ -13,7 +27,7 @@
 
     <!--更新-->
     <update id="updRoomById" parameterType="cn.smbms.pojo.Room">
-    update room set price=#{price},type=#{type},area=#{area},total=#{total},address=#{address} where roomId=#{roomId}
+    update room set price=#{price},type=#{type},area=#{area},total=#{total},address=#{address},roomDescribe=#{roomDescribe} where roomId=#{roomId}
     </update>
 
     <!--id查询-->
@@ -28,15 +42,33 @@
 
     <!--新增房型-->
     <insert id="insertRoom" parameterType="cn.smbms.pojo.Room">
-        INSERT INTO room(roomId,type,area,price,total,address)
-        VALUES (#{roomId},#{type},#{area},#{price},#{total},#{address})
+        INSERT INTO room(roomId,type,area,price,total,address,roomDescribe)
+        VALUES (#{roomId},#{type},#{area},#{price},#{total},#{address},#{roomDescribe})
     </insert>
 
 
     <!-- 查询所有房型前端接口-->
-    <select id="findAllRoomVue" resultType="cn.smbms.pojo.Room">
-    		select *   from  room
+    <select id="findAllRoomVue" resultMap="baseResultMap">
+    		select *   from  room a left join category b on a.categoryId=b.categoryId
     </select>
+
+    <select id="findRoomVue1" resultType="cn.smbms.pojo.Room">
+    		select *   from  room  where categoryId=#{categoryId}
+    </select>
+    <select id="findRoomVue2" resultType="cn.smbms.pojo.Room">
+    		select *   from  room  where categoryId=#{categoryId}
+    </select>
+    <select id="findRoomVue3" resultType="cn.smbms.pojo.Room">
+    		select *   from  room  where categoryId=#{categoryId}
+    </select>
+    <select id="findRoomVue4" resultType="cn.smbms.pojo.Room">
+    		select *   from  room  where categoryId=#{categoryId}
+    </select>
+    <select id="findRoomVue5" resultType="cn.smbms.pojo.Room">
+    		select *   from  room  where categoryId=#{categoryId}
+    </select>
+
+
 
 
 </mapper>

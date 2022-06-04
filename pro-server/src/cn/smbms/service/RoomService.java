@@ -41,4 +41,9 @@ public interface RoomService {
      *vue查询，前端接口
      */
     List<Room> findAllRoomVue();
+    List<Room> findRoomVue1(Integer categoryId);
+    List<Room> findRoomVue2( Integer categoryId);
+    List<Room> findRoomVue3(Integer categoryId);
+    List<Room> findRoomVue4(Integer categoryId);
+    List<Room> findRoomVue5(Integer categoryId);
 }

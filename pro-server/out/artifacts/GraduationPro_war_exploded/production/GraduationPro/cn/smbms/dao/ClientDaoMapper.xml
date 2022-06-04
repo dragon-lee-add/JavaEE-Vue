@@ -17,6 +17,8 @@
             <result column="area"  property="area" />
             <result column="total"  property="total" />
             <result column="address"  property="address" />
+            <result column="roomDescribe"  property="roomDescribe" />
+            <result column="categoryId"  property="categoryId" />
         </association>
     </resultMap>
     <!-- 查询所有 客户-->
@@ -31,7 +33,7 @@
     </select>
     <!--更新-->
     <update id="updClientById" parameterType="cn.smbms.pojo.Client">
-    update client set name=#{name},sex=#{sex},age=#{age},phone=#{phone},addr=#{addr} where id=#{id}
+    update client set roomId=#{roomId},name=#{name},sex=#{sex},age=#{age},phone=#{phone},addr=#{addr} where id=#{id}
     </update>
 
 

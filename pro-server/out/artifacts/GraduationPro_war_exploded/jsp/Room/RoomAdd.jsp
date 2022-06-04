@@ -57,6 +57,15 @@
             </div>
             <div class="form-group">
                 <div class="label">
+                    <label>具体描述：</label>
+                </div>
+                <div class="field">
+                    <input type="text" class="input w50" name="roomDescribe" size="50" placeholder="请输入具体描述"
+                           data-validate="required:请输入具体描述"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
                     <label>位置：</label>
                 </div>
                 <div class="field">

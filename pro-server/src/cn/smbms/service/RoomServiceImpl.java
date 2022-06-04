@@ -21,12 +21,7 @@ public class RoomServiceImpl implements RoomService {
 
         List<Room> list = roomDao.selectAllRoom();
 
-        //PageInfo<Room> pageInfo=new PageInfo<Room>(list);
-//        System.out.println("获取当前页："+pageInfo.getPageNum());
-//        System.out.println("获取总页数："+pageInfo.getPages());
-//        System.out.println("每页条数："+pageInfo.getPageSize());
-//        System.out.println("总记录数："+pageInfo.getTotal());
-//        System.out.println("当前页数据："+pageInfo.getList().size());
+
 
         return new PageInfo<Room>(list);
     }
@@ -60,8 +55,33 @@ public class RoomServiceImpl implements RoomService {
 
     @Override
     public List<Room> findAllRoomVue() {
-        System.out.println("测试");
+
         return roomDao.findAllRoomVue();
+    }
+
+    @Override
+    public List<Room> findRoomVue1(Integer categoryId) {
+        return roomDao.findRoomVue1(categoryId);
+    }
+
+    @Override
+    public List<Room> findRoomVue2(Integer categoryId) {
+        return  roomDao.findRoomVue2(categoryId);
+    }
+
+    @Override
+    public List<Room> findRoomVue3(Integer categoryId) {
+        return  roomDao.findRoomVue3(categoryId);
+    }
+
+    @Override
+    public List<Room> findRoomVue4(Integer categoryId) {
+        return  roomDao.findRoomVue4(categoryId);
+    }
+
+    @Override
+    public List<Room> findRoomVue5(Integer categoryId) {
+        return  roomDao.findRoomVue5(categoryId);
     }
 
 

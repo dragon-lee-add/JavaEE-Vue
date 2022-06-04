@@ -36,23 +36,25 @@
         </div>
         <table class="table table-hover text-center">
             <tr>
-                <th width="120">购买房型号</th>
+
                 <th>姓名</th>
                 <th>性别</th>
                 <th>年龄</th>
                 <th>电话</th>
                 <th>家庭住址</th>
+                <th width="120">购买房型号</th>
                 <th>购买类型</th>
                 <th>操作</th>
             </tr>
             <c:forEach items="${pageInfo.list}" var="client">
                 <tr>
-                    <td>${client.roomId}</td>
+
                     <td>${client.name}</td>
                     <td>${client.sex}</td>
                     <td>${client.age}</td>
                     <td>${client.phone}</td>
                     <td>${client.addr}</td>
+                    <td>${client.roomId}</td>
                     <td>${client.room.type}</td>
                     <td>
                         <div class="button-group">

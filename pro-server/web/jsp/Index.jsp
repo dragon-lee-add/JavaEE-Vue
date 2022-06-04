@@ -40,7 +40,7 @@
     <h2><span class="icon-pencil-square-o"></span>高级设置</h2>
     <ul style="display:block">
         <li><a href="EditPwd" target="right"><span class="icon-caret-right"></span>修改管理员密码</a></li>
-        <li><a href="FileUpload" target="right"><span class="icon-caret-right"></span>资料上传</a></li>
+        <%--<li><a href="FileUpload" target="right"><span class="icon-caret-right"></span>资料上传</a></li>--%>
     </ul>
 </div>
 <script type="text/javascript">

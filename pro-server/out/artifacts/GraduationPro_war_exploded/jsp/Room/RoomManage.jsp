@@ -32,6 +32,7 @@
                 <th>大小</th>
                 <th>剩余套数</th>
                 <th>位置</th>
+
                 <th>操作</th>
             </tr>
             <c:forEach items="${pageInfo.list}" var="room">
@@ -42,6 +43,7 @@
                     <td>${room.area}</td>
                     <td>${room.total}</td>
                     <td>${room.address}</td>
+
                     <td>
                         <div class="button-group">
                             <a href="${pageContext.request.contextPath}/delRoom.do?roomId=${room.roomId}"

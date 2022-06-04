@@ -45,9 +45,44 @@ public class RoomController {
     @ResponseBody
     public List<Room> findById(@RequestBody HashMap<String, String> map){
         List<Room> room = roomService.selectByIdOfVue(map.get("roomId"));
-        System.out.println(room);
         return room;
     }
+    @RequestMapping("/findRoomVue1")
+    @ResponseBody
+    public List<Room> findRoomVue1(@RequestBody HashMap<String, String> map){
+        List<Room> room = roomService.findRoomVue1(Integer.valueOf(map.get("categoryId")));
+        return room;
+    }
+
+    @RequestMapping("/findRoomVue2")
+    @ResponseBody
+    public List<Room> findRoomVue2(@RequestBody HashMap<String, String> map){
+        List<Room> room = roomService.findRoomVue2(Integer.valueOf(map.get("categoryId")));
+        return room;
+    }
+
+    @RequestMapping("/findRoomVue3")
+    @ResponseBody
+    public List<Room> findRoomVue3(@RequestBody HashMap<String, String> map){
+        List<Room> room = roomService.findRoomVue3(Integer.valueOf(map.get("categoryId")));
+        return room;
+    }
+    @RequestMapping("/findRoomVue4")
+    @ResponseBody
+    public List<Room> findRoomVue4(@RequestBody HashMap<String, String> map){
+        List<Room> room = roomService.findRoomVue4(Integer.valueOf(map.get("categoryId")));
+        return room;
+    }
+    @RequestMapping("/findRoomVue5")
+    @ResponseBody
+    public List<Room> findRoomVue5(@RequestBody HashMap<String, String> map){
+        List<Room> room = roomService.findRoomVue5(Integer.valueOf(map.get("categoryId")));
+        return room;
+    }
+
+
+
+
 
 
 
@@ -55,10 +90,11 @@ public class RoomController {
      * 房型查询所有
      */
     @RequestMapping(value = "/RoomList.do")
-    public ModelAndView findAll(@RequestParam(required = false,defaultValue = "1",value = "page")Integer page, HttpSession session) {
+    public ModelAndView findAll(@RequestParam(required = false,defaultValue = "1",value = "page")Integer page,String aa, HttpSession session) {
         ModelAndView mv = new ModelAndView();
         PageHelper.startPage(page,10);
         PageInfo<Room> pageInfo = roomService.findAllRoomByPage();
+
         //数据存储到分页插件
         mv.addObject("pageInfo", pageInfo);
         //视图跳转
@@ -101,6 +137,7 @@ public class RoomController {
         room.setArea(request.getParameter("area"));
         room.setTotal(request.getParameter("total"));
         room.setAddress(request.getParameter("address"));
+        room.setRoomDescribe(request.getParameter("roomDescribe"));
         roomService.insertRoom(room);
         return "redirect:RoomList.do";
     }

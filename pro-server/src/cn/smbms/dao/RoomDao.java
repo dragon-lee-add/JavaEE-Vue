@@ -38,6 +38,14 @@ public interface RoomDao {
      *前端接口
      */
     List<Room> findAllRoomVue();
+    List<Room> findRoomVue1(@RequestBody Integer categoryId);
+    List<Room> findRoomVue2(@RequestBody Integer categoryId);
+    List<Room> findRoomVue3(@RequestBody Integer categoryId);
+    List<Room> findRoomVue4(@RequestBody Integer categoryId);
+    List<Room> findRoomVue5(@RequestBody Integer categoryId);
+
+
+
 }
 
 
