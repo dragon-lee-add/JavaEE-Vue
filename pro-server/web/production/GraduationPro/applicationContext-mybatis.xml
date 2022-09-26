@@ -38,8 +38,6 @@
 			<property name= "validationQuery" value="select 1"/>
 			<property name= "timeBetweenEvictionRunsMillis" value="60000"/>
 			<property name= "numTestsPerEvictionRun" value="${maxActive}"/>
-
-
     </bean>
     
     <!-- 事务管理 -->
@@ -52,19 +50,6 @@
     	<property name="dataSource" ref="dataSource"/>
     	<property name="configLocation" value="classpath:mybatis-config.xml"/>
 		<property name="mapperLocations" value="classpath*:/cn/smbms/dao/*Mapper.xml"/>
-		<!-- 分页的配置文件 -->
-		<!--<property name="plugins">-->
-            <!--<set>-->
-				<!--<bean class="com.github.pagehelper.PageInterceptor">-->
-					<!--<property name="properties">-->
-                        <!--<props>-->
-                            <!--<prop key="helperDialect">mysql</prop>-->
-                            <!--<prop key="resonable">true</prop>-->
-                        <!--</props>-->
-					<!--</property>-->
-				<!--</bean>-->
-            <!--</set>-->
-		<!--</property>-->
     </bean>
     
    	<!-- AOP 事务处理 开始 -->
@@ -83,21 +68,9 @@
 		</aop:aspect>
 	</aop:config>
 
-	<!--<aop:aspectj-autoproxy />-->
-	<!--<aop:config  proxy-target-class="true">-->
-		<!--<aop:pointcut expression="execution(* *cn.smbms.service..*(..))" id="transService"/>-->
-		<!--<aop:advisor pointcut-ref="transService" advice-ref="txAdvice" />-->
-	<!--</aop:config> -->
-	<!--<tx:advice id="txAdvice" transaction-manager="transactionManager">  -->
-	    <!--<tx:attributes>  -->
-	       <!--<tx:method name="smbms*"  propagation="REQUIRED" rollback-for="Exception"  />-->
-	    <!--</tx:attributes>  -->
-	<!--</tx:advice> -->
-	<!-- AOP 事务处理 结束 -->
 	
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
          <property name="basePackage" value="cn.smbms.dao" />
     </bean>
-
 
 </beans>

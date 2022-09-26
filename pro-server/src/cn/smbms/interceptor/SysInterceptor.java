@@ -18,7 +18,6 @@ public class SysInterceptor extends HandlerInterceptorAdapter {
 	
 	public boolean preHandle(HttpServletRequest request,HttpServletResponse response,Object handler) throws Exception{
 		logger.debug("日志打印");
-
 		return true;
 	}
 

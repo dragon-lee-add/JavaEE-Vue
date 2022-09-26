@@ -27,7 +27,7 @@
 
     <!--更新-->
     <update id="updRoomById" parameterType="cn.smbms.pojo.Room">
-    update room set price=#{price},type=#{type},area=#{area},total=#{total},address=#{address},roomDescribe=#{roomDescribe} where roomId=#{roomId}
+        update room set price=#{price},type=#{type},area=#{area},total=#{total},address=#{address},roomDescribe=#{roomDescribe} where roomId=#{roomId}
     </update>
 
     <!--id查询-->
